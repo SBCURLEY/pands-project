@@ -13,7 +13,7 @@ The iris data consisted of 150 samples of three species of Iris. The first colum
 <img width="528" height="291" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimmGMPw0jM_8xjndEHLKj7Hf5fngvWFOJ6_V4jiFb-U0sCHej3aTu08htye1_BgUBGKfnszHoeI_OLLZVf6NjwaG9oDYyOqkjdjeDajd3zg8VuCLVTzDM8hO2XEnarwQeM-CLvFgAwfNX53GR_HPatNPkUH7-7FAoNgFKjw7ujB9LwW5piE8GIPLjJHw/w531-h291/irir_flowers.png)")
 </p>
 
-The iris species look similar, but the difference in measurements can be used to classify them. The input variables are sepal length and width and petal length and width; each row represents an instance or observation. The output variable is Iris-setosa, Iris-versicolor, or Iris-virginica; each column represents a class label.
+The iris species look similar, but the difference in measurements can be used to classify them. The input variables are sepal length and width and petal length and width; each row represents an instance or observation. The output variable is species - setosa, versicolor, or virginica.
 
 <p align="center">
 <img width="324" height="300" src="https://raw.githubusercontent.com/ritchieng/machine-learning-dataschool/master/images/03_iris.png")
@@ -81,3 +81,5 @@ First step to Statistics (with Iris data)       https://medium.com/analytics-vid
 Iris Dataset                                    https://www.ritchieng.com/machine-learning-iris-dataset/     PICTURE : IRIS ATTRIBUTES
 
 Analyzing Iris Data                    https://github.com/Sahilll94/Analyzing-Iris-Dataset-/blob/main/Analyzing%20Iris%20Data.ipynb       GREAT ANALYSIS!
+
+How to align images in markdown         https://davidwells.io/snippets/how-to-align-images-in-markdown
