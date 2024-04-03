@@ -8,7 +8,7 @@ import numpy as np
 
 
 
-#df=pd.read_csv("iris.data")                                 # Reading the file 
+df=pd.read_csv("iris.data")                                 # Reading the file 
 #data.head()     
 
 print(iris.data)
