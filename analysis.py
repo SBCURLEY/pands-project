@@ -1,38 +1,45 @@
 # analysis.py
-#
+# Project: research the dataset, su[poprted by documentation and code. 
 # Author: Sharon Curley
 
-# Data Frames
-import pandas as pd
 
-# Plot data
-import matplotlib.pyplot as plt
+# 2. Import Libraries
 
-# Numerical arrays
-import numpy as np
+import pandas as pd                     # for data analysis
+
+import matplotlib.pyplot as plt         # functionality for multidimensional arrays
+
+import numpy as np                      # Essential for creating static, animated, and interactive visualizations in Python
+
+import seaborn as sns                   # Provides a high-level interface for drawing attractive statistical graphics
 
 
+# 3. Load data
 
 df = pd.read_csv("https://raw.githubusercontent.com/mwaskom/seaborn-data/master/iris.csv")             # Reading the dataset “Irisdata.csv”.
 
-#print(df.head())                                                   # Displays the top rows of the dataset with their columns.    
+print(df.head())                        # Displays the top 5 rows of the dataset with their columns.                                        
 
-#print(df.sample(10))                                               # Displays the number of rows randomly. 
+print("\n") 
 
-#print(df.columns)                                                  # Displays the number of columns and names of the columns. 
+print (df)                              # Displays the dataset
 
-#print(df)                                                          # Displays the dataset.
+print("\n") 
 
-#print(df.shape)                                                    # Displays the shape of the dataset.
+print (df["species"].value_counts())    # Counts the number of times a particular species has occurred
 
-#print(df.describe())                                               # Displays stats about the dataset.              
+print("\n") 
 
-#print(df.dtypes)
+# 4. Data Exploration
 
-#df.info()                                                          # Displays basic info about the dataset   
+print (df.info())                       # Displays basic info about the dataset   
 
-# Filtering: Displaying the specific rows using “iloc” and “loc” functions. 
-# The “loc” functions use the index name of the row to display the particular row of the dataset.
-# The “iloc” functions use the index integer of the row, which gives complete information about the row. 
+print("\n") 
 
-print(df.iloc[5])                                                   # prints row 5 which is row 7 in my data csv
+print (df.iloc[0])                      # Filtering: use the index integer of the row, which gives complete information about the row. 
+
+print("\n") 
+
+print (df.describe(include="all"))      # Displays stats about the dataset.   
+
+print("\n")
