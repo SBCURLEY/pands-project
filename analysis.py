@@ -221,4 +221,162 @@ plt.savefig("iris_histogram_petal_width.png")
 # plt.show()                                    # show & comment out
 
 plt.close("all") # closing all previous open plots. 
-                 # If not closed here, they will show up from below, when outputing next plots
+                 # If not closed here, they will show up from below, when outputting next plots
+
+# TRYING TO GET ALL ONE ONE HISTOGRAM
+
+fig, axs = plt.subplots(2, 2, figsize=(12, 8))
+
+# iris_histogram_sepal_length.png    
+df.hist("sepal_length",                         # Creating a Histogram only of Sepal Length "iris_histogram_sepal_length.png" 
+ax=axs[0, 0],            
+ec = "black",                                   # The ec (edge color) parameter define an edge on each bar with black outline.
+lw = 1.0,                                       # The lw (line width) can be increased
+color ="lightblue",                             # The color parameter sets the color of the bars in the histogram.
+alpha = 0.9,                                    # The alpha parameter sets the transparency of the bars.
+label="Sepal Length")                           # Creating a Histogram only of Sepal Length
+
+ax=axs[0, 0].set_title ("Histogram of Sepal Length",         # Sets the title name
+fontsize=18,                                    # font size = controls the size of the font and sets it to 18.
+loc="center",                                   # loc = The location of the title can be ‘center’, ‘left’, ‘right’.
+horizontalalignment="center",                   # You can adjust with horizontal alignment ('center', 'right', 'left').
+verticalalignment="bottom",                     # the vertical alignment ('top', 'bottom', 'center', 'baseline')
+fontweight="bold",                              # font weight = controls the weight of the font - bold                      
+family="monospace")                             # family = controls the font family of the font - monospace
+
+
+ax=axs[0, 0].set_xlabel("Sepal Length in cm",                # Sets the label for the x-axis
+fontsize=13,                                    # font size = controls the size of the font and sets it to 15
+style="italic",                                 # style = controls the style of the font - italic
+family="monospace")                             # family = controls the font family of the font - monospace                       
+
+ax=axs[0, 0].set_ylabel("Count",                             # Sets the label for the y-axis
+fontsize=13,                                    # font size = controls the size of the font and sets it to 15
+style="italic",                                 # style = controls the style of the font - italic
+family="monospace")                             # family = controls the font family of the font - monospace.
+
+ax=axs[0, 0].set_grid(alpha=0.75)                            # Set a grid with transparency of 0.75
+
+# plt.legend(loc="best")                        # show one attribute, comment out
+
+# plt.savefig("iris_histogram_sepal_length.png")  
+
+# plt.show()                                    # show & comment out
+
+
+# iris_histogram_sepal_width.png
+df.hist("sepal_width",                          # Creating a Histogram only of Sepal Width = "iris_histogram_sepal_width.png"  
+ax=axs[0, 1],       
+ec = "black",                                   # The ec (edge color) parameter define an edge on each bar with black outline.
+lw = 1.0,                                      # The lw (line width) can be increased
+color ="lightblue",                             # The color parameter sets the color of the bars in the histogram.
+alpha = 0.9,                                    # The alpha parameter sets the transparency of the bars.
+label="Sepal Width")                            # Creating a Histogram only of Sepal Width
+
+axs[0, 1].set.title ("Histogram of Sepal Width",          # Sets the title name
+fontsize=18,                                    # font size = controls the size of the font and sets it to 18.
+loc="center",                                   # loc = The location of the title can be ‘center’, ‘left’, ‘right’.
+horizontalalignment="center",                   # You can adjust with horizontal alignment ('center', 'right', 'left').
+verticalalignment="bottom",                     # the vertical alignment ('top', 'bottom', 'center', 'baseline')
+fontweight="bold",                              # font weight = controls the weight of the font - bold                      
+family="monospace")                             # family = controls the font family of the font - monospace
+
+
+axs[0, 1].set_xlabel("Sepal Width in cm",                 # Sets the label for the x-axis
+fontsize=13,                                    # font size = controls the size of the font and sets it to 15
+style="italic",                                 # style = controls the style of the font - italic
+family="monospace")                             # family = controls the font family of the font - monospace                       
+
+axs[0, 1].set_ylabel("Count",                             # Sets the label for the y-axis
+fontsize=13,                                    # font size = controls the size of the font and sets it to 15
+style="italic",                                 # style = controls the style of the font - italic
+family="monospace")                             # family = controls the font family of the font - monospace.
+
+axs[0, 1].set_grid(alpha=0.75)                            # Set a grid with transparency of 0.75
+
+# plt.legend(loc="best")                        # show one attribute, comment out
+
+#plt.savefig("iris_histogram_sepal_width.png")  
+
+# plt.show()                                    # show & comment out
+
+# iris_histogram_petal_length.png    
+df.hist("petal_length",                         # Creating a Histogram only of Petal Length "iris_histogram_petal_length.png"   
+ax=axs[1, 0],          
+ec = "black",                                   # The ec (edge color) parameter define an edge on each bar with black outline.
+lw = 1.0,                                      # The lw (line width) can be increased
+color ="lightblue",                             # The color parameter sets the color of the bars in the histogram.
+alpha = 0.9,                                    # The alpha parameter sets the transparency of the bars.
+label="Sepal Length")                           # Creating a Histogram only of Sepal Length
+
+axs[1, 0].set_title ("Histogram of Petal Length",         # Sets the title name
+fontsize=18,                                    # font size = controls the size of the font and sets it to 18.
+loc="center",                                   # loc = The location of the title can be ‘center’, ‘left’, ‘right’.
+horizontalalignment="center",                   # You can adjust with horizontal alignment ('center', 'right', 'left').
+verticalalignment="bottom",                     # the vertical alignment ('top', 'bottom', 'center', 'baseline')
+fontweight="bold",                              # font weight = controls the weight of the font - bold                      
+family="monospace")                             # family = controls the font family of the font - monospace
+
+
+axs[1, 0].set_xlabel("Petal Length in cm",                # Sets the label for the x-axis
+fontsize=13,                                    # font size = controls the size of the font and sets it to 15
+style="italic",                                 # style = controls the style of the font - italic
+family="monospace")                             # family = controls the font family of the font - monospace                       
+
+axs[1, 0].set_ylabel("Count",                             # Sets the label for the y-axis
+fontsize=13,                                    # font size = controls the size of the font and sets it to 15
+style="italic",                                 # style = controls the style of the font - italic
+family="monospace")                             # family = controls the font family of the font - monospace.
+
+axs[1, 0].set_grid(alpha=0.75)                            # Set a grid with transparency of 0.75
+
+# plt.legend(loc="best")                        # show one attribute, comment out
+
+#plt.savefig("iris_histogram_petal_length.png")  
+
+# plt.show()                                    # show & comment out
+
+
+# iris_histogram_petal_width.png
+df.hist("petal_width",                          # Creating a Histogram only of Petal Width = "iris_histogram_petal_width.png"   
+ax=axs[1, 1],      
+ec = "black",                                   # The ec (edge color) parameter define an edge on each bar with black outline.
+lw = 1.0,                                      # The lw (line width) can be increased
+color ="lightblue",                             # The color parameter sets the color of the bars in the histogram.
+alpha = 0.9,                                    # The alpha parameter sets the transparency of the bars.
+label="Petal Width")                            # Creating a Histogram only of Sepal Width
+
+axs[1, 1].set.title ("Histogram of Petal Width",          # Sets the title name
+fontsize=18,                                    # font size = controls the size of the font and sets it to 18.
+loc="center",                                   # loc = The location of the title can be ‘center’, ‘left’, ‘right’.
+horizontalalignment="center",                   # You can adjust with horizontal alignment ('center', 'right', 'left').
+verticalalignment="bottom",                     # the vertical alignment ('top', 'bottom', 'center', 'baseline')
+fontweight="bold",                              # font weight = controls the weight of the font - bold                      
+family="monospace")                             # family = controls the font family of the font - monospace
+
+
+axs[1, 1].set_xlabel("Sepal Width in cm",                 # Sets the label for the x-axis
+fontsize=13,                                    # font size = controls the size of the font and sets it to 15
+style="italic",                                 # style = controls the style of the font - italic
+family="monospace")                             # family = controls the font family of the font - monospace                       
+
+axs[1, 1].set_ylabel("Count",                             # Sets the label for the y-axis
+fontsize=13,                                    # font size = controls the size of the font and sets it to 15
+style="italic",                                 # style = controls the style of the font - italic
+family="monospace")                             # family = controls the font family of the font - monospace.
+
+axs[1, 1].set_grid(alpha=0.75)                            # Set a grid with transparency of 0.75
+
+# plt.legend(loc="best")                        # show one attribute, comment out
+
+# plt.savefig("iris_histogram_petal_width.png")  
+
+# plt.show()                                    # show & comment out
+
+plt.tight_layout()
+
+plt.savefig("iris_histograms.png")
+
+plt.close("all") # closing all previous open plots. 
+                 # If not closed here, they will show up from below, when outputting next plots
+
