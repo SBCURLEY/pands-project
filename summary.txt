@@ -1,3 +1,5 @@
+Top 5 rows of the dataset with their columns using df.head(): 
+
    sepal_length  sepal_width  petal_length  petal_width species
 0           5.1          3.5           1.4          0.2  setosa
 1           4.9          3.0           1.4          0.2  setosa
@@ -5,6 +7,8 @@
 3           4.6          3.1           1.5          0.2  setosa
 4           5.0          3.6           1.4          0.2  setosa
 
+
+The following displays the dataset using df(): 
 
      sepal_length  sepal_width  petal_length  petal_width    species
 0             5.1          3.5           1.4          0.2     setosa
@@ -22,12 +26,16 @@
 [150 rows x 5 columns]
 
 
+Below is the three class or species types of iris in the data set: 
+
 species
 setosa        50
 versicolor    50
 virginica     50
 Name: count, dtype: int64
 
+
+A concise summary of the iris DataFrame using df.info(): 
 
 <class 'pandas.core.frame.DataFrame'>
 RangeIndex: 150 entries, 0 to 149
@@ -43,6 +51,8 @@ dtypes: float64(4), object(1)
 memory usage: 6.0+ KB
 
 
+Filter the data by row for detailed information using df.iloc(): 
+ 
 sepal_length       5.1
 sepal_width        3.5
 petal_length       1.4
@@ -51,6 +61,8 @@ species         setosa
 Name: 0, dtype: object
 
 
+Here are some summary statistics for the iris DataFrame using df.describe(): 
+ 
         sepal_length  sepal_width  petal_length  petal_width species
 count     150.000000   150.000000    150.000000   150.000000     150
 unique           NaN          NaN           NaN          NaN       3
@@ -65,3 +77,15 @@ min         4.300000     2.000000      1.000000     0.100000     NaN
 max         7.900000     4.400000      6.900000     2.500000     NaN
 
 
+The number of null or missing values in the iris DataFrame for each column using df.isnull(): 
+
+
+0
+
+
+sepal_length    0
+sepal_width     0
+petal_length    0
+petal_width     0
+species         0
+dtype: int64
