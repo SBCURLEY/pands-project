@@ -13,33 +13,43 @@ import numpy as np                      # Essential for creating static, animate
 
 import seaborn as sns                   # Provides a high-level interface for drawing attractive statistical graphics
 
+import io                               # Provides the Python interfaces to stream handling.
+
 
 # 3. Load data
 
 df = pd.read_csv("https://raw.githubusercontent.com/mwaskom/seaborn-data/master/iris.csv")             # Reading the dataset “Irisdata.csv”.
 
-print(df.head())                        # Displays the top 5 rows of the dataset with their columns.                                        
+with open("summary.txt", "w") as f:
+    print(df.head(), file=f)                        # Displays the top 5 rows of the dataset with their columns.                                        
 
-print("\n") 
+    print("\n", file=f) 
 
-print (df)                              # Displays the dataset
+    print(df, file=f)                               # Displays the dataset
 
-print("\n") 
+    print("\n", file=f) 
 
-print (df["species"].value_counts())    # Counts the number of times a particular species has occurred
+    print(df["species"].value_counts(),file=f)      # Counts the number of times a particular species has occurred
 
-print("\n") 
+    print("\n", file=f) 
 
 # 4. Data Exploration
 
-print (df.info())                       # Displays basic info about the dataset   
+    # print(df.info(), file=f)                      # Displays basic info about the dataset but did not work - research another way.
 
-print("\n") 
+buffer = io.StringIO()                              # This line creates an in-memory buffer using StringIO. This buffer will be used to store the output of df.info()
+df.info(buf=buffer)                                 # Pipe output of DataFrame.info to buffer instead of sys.stdout
+s = buffer.getvalue()                               # Retrieves the contents of the buffer and stores them in the variable s.
+with open("summary.txt", "a",                       # get buffer content and append to a text file:
+            encoding="utf-8") as f:                 # This line opens a file named "df_info.txt" in write mode ("w"), specifying UTF-8 encoding.
+    f.write(s)                                      # This line writes the contents of the variable s (which holds the DataFrame information) into the opened file.
 
-print (df.iloc[0])                      # Filtering: use the index integer of the row, which gives complete information about the row. 
+    print("\n",file=f) 
 
-print("\n") 
+    print(df.iloc[0], file=f)                      # Filtering: use the index integer of the row, which gives complete information about the row. 
 
-print (df.describe(include="all"))      # Displays stats about the dataset.   
+    print("\n", file=f) 
 
-print("\n")
+    print(df.describe(include="all"), file=f)      # Displays stats about the dataset.   
+
+    print("\n", file=f)
