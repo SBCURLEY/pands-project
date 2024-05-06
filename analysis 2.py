@@ -78,7 +78,6 @@ with open("summary.txt", "a",                       # get buffer content and app
     print(df.isnull().sum(),file=f)
     
     
-    
 # iris_histogram_sepal_length.png    
 df.hist("sepal_length",                         # Creating a Histogram only of Sepal Length "iris_histogram_sepal_length.png"             
 ec = "black",                                   # The ec (edge color) parameter define an edge on each bar with black outline.
@@ -112,6 +111,7 @@ plt.grid(alpha=0.75)                            # Set a grid with transparency o
 
 plt.savefig("iris_histogram_sepal_length.png")  
 
+# plt.show()                                    # show & comment out
 
 
 # iris_histogram_sepal_width.png
@@ -147,7 +147,7 @@ plt.grid(alpha=0.75)                            # Set a grid with transparency o
 
 plt.savefig("iris_histogram_sepal_width.png")  
 
-
+# plt.show()                                    # show & comment out
 
 # iris_histogram_petal_length.png    
 df.hist("petal_length",                         # Creating a Histogram only of Petal Length "iris_histogram_petal_length.png"             
@@ -182,6 +182,7 @@ plt.grid(alpha=0.75)                            # Set a grid with transparency o
 
 plt.savefig("iris_histogram_petal_length.png")  
 
+# plt.show()                                    # show & comment out
 
 
 # iris_histogram_petal_width.png
@@ -217,48 +218,85 @@ plt.grid(alpha=0.75)                            # Set a grid with transparency o
 
 plt.savefig("iris_histogram_petal_width.png")  
 
+# plt.show()                                    # show & comment out
+
 plt.close("all")                                # closing all previous open plots. 
 
 
-# Plot a boxplot
-palette = {"setosa": "darkturquoise",           # defining the colours for each species
-        "versicolor": "blue", 
-        "virginica": "darkviolet"
-        }
+#df.boxplot(by="species",figsize=(10,10))        # Boxplot command
+plt.figure(figsize = (10, 7))                   # Determining the size of the plot
 
-f, axes = plt.subplots(2, 2,                    # sets four plots are being plotted on a 2 by 2 grid.
-            sharey=False,                       # y-axis scales will not be shared among the subplots, default is true
-            figsize=(12, 8)                     # set figure size
-            )   
+plt.ylabel("Length in cm",                      # Sets the label for the y-axis
+    fontsize=13,                                # font size = controls the size of the font and sets it to 15
+    style="italic",                             # style = controls the style of the font - italic
+    family="monospace")                         # family = controls the font family of the font - monospace.
 
-sns.boxplot(x="species",                        # create boxplot for species       
-            y="petal_length",                   # and petal_length
-            palette=palette,                    # palette as per species above
-            data=df,                            # data source is the dataframe
-            ax = axes[0,0])                     # ax parameter specifies the subplot where each boxplot will be drawn.                      
 
-sns.boxplot(x="species",                        # create boxplot for species   
-            y="sepal_length",                   # and sepal_length
-            palette=palette,                    # palette as per species above
-            data=df,                            # data source is the dataframe
-            ax=axes[0,1])                       # ax parameter specifies the subplot where each boxplot will be drawn.
-
-sns.boxplot(x="species",                        # create boxplot for species
-            y="petal_width",                    # and petal_width 
-            palette=palette,                    # palette as per species above
-            data=df,                            # data source is the dataframe
-            ax=axes[1,0])                       # ax parameter specifies the subplot where each boxplot will be drawn.
-
-sns.boxplot(x="species",                        # create boxplot for species
-            y="sepal_width",                    # and sepal_width
-            palette=palette,                    # palette as per species above
-            data=df,                            # data source is the dataframe
-            ax=axes[1,1])                       # ax parameter specifies the subplot where each boxplot will be drawn.
-
-f.suptitle("Boxplot of the Iris Petal and Sepal measurements", # set title
+plt.title("Iris Data Set Boxplot",              # Sets the title name
         fontsize=18,                            # font size = controls the size of the font and sets it to 18.
+        loc="center",                           # loc = The location of the title can be ‘center’, ‘left’, ‘right’.                  
         fontweight="bold",                      # font weight = controls the weight of the font - bold                      
-        family="monospace")                     # family = controls the font family of the font - monospace)
+        family="monospace",                     # family = controls the font family of the font - monospace
+        y=1.02)                                 # Adds space between boxplot and title
 
-plt.savefig("iris_boxplot")                     # save to png.
+df.boxplot()        # Boxplot command
 
+plt.savefig("iris_boxplot")    
+#plt.show()
+plt.close()
+
+
+
+
+
+plt.ylabel("Length in cm",                      # Sets the label for the y-axis
+    fontsize=13,                                # font size = controls the size of the font and sets it to 15
+    style="italic",                             # style = controls the style of the font - italic
+    family="monospace")                         # family = controls the font family of the font - monospace.
+
+
+plt.title("Iris Data Set Boxplot",              # Sets the title name
+        fontsize=18,                            # font size = controls the size of the font and sets it to 18.
+        loc="center",                           # loc = The location of the title can be ‘center’, ‘left’, ‘right’.                  
+        fontweight="bold",                      # font weight = controls the weight of the font - bold                      
+        family="monospace",                     # family = controls the font family of the font - monospace
+        y=1.02)                                 # Adds space between boxplot and title
+
+df.boxplot(by="species",figsize=(10,10))        # Boxplot command
+
+plt.savefig("iris_boxplot2")    
+#plt.show()
+plt.close()
+
+
+palette = {'setosa': 'blue', 'versicolor': 'green', 'virginica': 'red'}
+
+sns.set(style="ticks")
+f, axes = plt.subplots(2, 2, sharey=False, figsize=(12, 8))
+f, axes = plt.subplots(2, 2, sharey=False, figsize=(12, 8))
+sns.boxplot(x="species", 
+            y="petal_length", 
+            palette=palette, 
+            data=df, 
+            ax = axes[0,0])
+
+sns.boxplot(x="species", 
+            y="sepal_length", 
+            palette=palette, 
+            data=df, 
+            ax=axes[0,1])
+
+sns.boxplot(x="species", 
+            y="petal_width", 
+            palette=palette, 
+            data=df, 
+            ax=axes[1,0])
+
+sns.boxplot(x="species", 
+            y="sepal_width", 
+            palette=palette, 
+            data=df, 
+            ax=axes[1,1])
+
+f.suptitle("Boxplot of the Petal and Sepal measurements by Iris plant Species")
+plt.show()
