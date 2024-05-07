@@ -262,3 +262,47 @@ f.suptitle("Boxplot of the Iris Petal and Sepal measurements", # set title
 
 plt.savefig("iris_boxplot")                     # save to png.
 
+plt.close("all")                                # closing all previous open plots. 
+
+
+# PCC (Pearson correlation coefficient)
+
+with open("summary.txt", "a") as f:             # open the summary.txt for amend
+    f.write(s)                                  # write to f
+
+    print("\n", file=f)                         # space line
+    
+    print("The following displays the Pearson correlation coefficient: \n", file=f)
+
+    print(df[["petal_length", "petal_width", "sepal_length", "sepal_width"]].corr(),file=f)  # Correlation
+
+    print("\n", file=f)
+
+
+# Heatmap using Seaborn
+
+correlation_df = df[["petal_length", "petal_width", "sepal_length", "sepal_width"]].corr()
+
+axis_corr = sns.heatmap(        # create a heatmap using Seaborn's heatmap function
+    correlation_df,             # define what data to use
+    vmin=-1,                    # set variable min to -1
+    vmax=1,                     # set variable max to 1
+    center=0,                   # specifies the center value for the colormap
+    cmap=sns.diverging_palette(50, 500, n=500),     # sets the colour pallette
+    square=True,                # all cells are square
+    annot=True,                 # Display correlation values in each box
+    )
+
+plt.savefig("iris_heatmap")                     # save to png.
+plt.show()
+
+
+
+
+
+
+
+#plen = df ["petal_length"]
+#pwidth = df ["petal_width"]
+#slen = df ["sepal_length"]
+#swidth = ["sepal_width"]
