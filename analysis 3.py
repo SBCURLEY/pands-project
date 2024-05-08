@@ -288,92 +288,21 @@ axis_corr = sns.heatmap(        # create a heatmap using Seaborn's heatmap funct
     vmin=-1,                    # set variable min to -1
     vmax=1,                     # set variable max to 1
     center=0,                   # specifies the center value for the colormap
-    cmap="Purples",             # sets the colour pallette
+    cmap=sns.diverging_palette(50, 500, n=500),     # sets the colour pallette
     square=True,                # all cells are square
     annot=True,                 # Display correlation values in each box
     )
 
-plt.savefig("iris_heatmap")                 # save to png.
+plt.savefig("iris_heatmap")                     # save to png.
+plt.show()
 
-plt.close("all")   
 
 
-# Scatterplot Diagrams
 
-setosa=df[df["species"]=="setosa"]
-versicolor =df[df["species"]=="versicolor"]
-virginica =df[df["species"]=="virginica"]
 
-fig,ax=plt.subplots(1,2,figsize=(16, 8))
 
-setosa.plot(x="sepal_length",               # set x axis
-            y="sepal_width",                # set y axis
-            kind="scatter",                 # scatter plot
-            ax=ax[0],                       # set diagram 1
-            label="I. Setosa",              # label the first species
-            color="darkturquoise",          # define a colour
-            marker="^"                      # change dots to triangles
-            )
 
-versicolor.plot(x="sepal_length",           # set x axis
-                y="sepal_width",            # set y axis
-                kind="scatter",             # scatter plot
-                ax=ax[0],                   # set diagram 1
-                label="I. Versicolor",      # label the second species
-                color="blue",               # define a colour
-                marker="^"                  # change dots to triangles
-                )
-
-virginica.plot(x="sepal_length",            # set x axis
-                y="sepal_width",            # set y axis
-                kind="scatter",             # scatter plot
-                ax=ax[0],                   # set diagram 1
-                label="I. Virginica",       # label the third species
-                color="darkviolet",         # define a colour
-                marker="^"                  # change dots to triangles
-                )
-
-setosa.plot(x="petal_length",               # set x axis
-            y="petal_width",                # set y axis
-            kind="scatter",                 # scatter plot
-            ax=ax[1],                       # set diagram 2
-            label="I. Setosa",              # label the first species
-            color="darkturquoise",          # define a colour
-            marker="^"                      # change dots to triangles
-            )
-
-versicolor.plot(x="petal_length",           # set x axis
-                y="petal_width",            # set y axis
-                kind="scatter",             # scatter plot
-                ax=ax[1],                   # set diagram 2
-                label="I. Versicolor",      # label the second species
-                color="blue",               # define a colour
-                marker="^"                  # change dots to triangles
-                )
-virginica.plot(x="petal_length",            # set x axis
-                y="petal_width",            # set y axis
-                kind="scatter",             # scatter plot
-                ax=ax[1],                   # set diagram 3
-                label="I. Virginica",       # label the third species
-                color="darkviolet",         # define a colour
-                marker="^"                  # change dots to triangles
-                )
-
-ax[0].set_title("Sepal Width vs. Sepal Length for Iris Species", # set title
-        fontsize=14,                        # font size = controls the size of the font and sets it to 18.
-        fontweight="bold",                  # font weight = controls the weight of the font - bold                      
-        family="monospace")                 # family = controls the font family of the font - monospace))
-
-ax[1].set_title("Petal Width vs. Petal Length for Iris Species", # set title
-        fontsize=14,                        # font size = controls the size of the font and sets it to 18.
-        fontweight="bold",                  # font weight = controls the weight of the font - bold                      
-        family="monospace")                 # family = controls the font family of the font - monospace))
-
-ax[0].legend(title="Species", loc="best")   # show legend with title for first plot                              
-ax[1].legend(title="Species", loc="best")   # show legend with title for first plot      
-
-plt.savefig("iris_scatterplot")      
-
-# plt.show()
-plt.close("all")  
-
+#plen = df ["petal_length"]
+#pwidth = df ["petal_width"]
+#slen = df ["sepal_length"]
+#swidth = ["sepal_width"]
