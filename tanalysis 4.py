@@ -377,39 +377,19 @@ plt.savefig("iris_scatterplot")
 # plt.show()
 plt.close("all")  
 
-# Line Chart 
-
-g = sns.FacetGrid(df,hue="species",height=5)
-g = g.map(sns.kdeplot, "sepal_length").add_legend()
-plt.savefig("iris_line_chart_sepal_length") 
-
-g = sns.FacetGrid(df,hue="species",height=5)
-g = g.map(sns.kdeplot, "sepal_width").add_legend()
-plt.savefig("iris_line_chart_sepal_width") 
-
-g = sns.FacetGrid(df,hue="species",height=5)
-g = g.map(sns.kdeplot, "petal_length").add_legend()
-plt.savefig("iris_line_chart_petal_length") 
-
-g = sns.FacetGrid(df,hue="species",height=5)
-g = g.map(sns.kdeplot, "petal_width").add_legend()
-plt.savefig("iris_line_chart_petal_width") 
-
-#plt.show()             # Outputing all plots created above
 
 
-# Create a FacetGrid for all four plots on one plot ????
-variables = ["sepal_length", "sepal_width", "petal_length", "petal_width"]
-g = sns.FacetGrid(df, col="variables", hue="species", col_wrap=2, height=5)
+g = sns.FacetGrid(dataset,hue="Species",height=5)
+g = g.map(sns.kdeplot, 'Sepal-Length').add_legend()
 
-# Map kdeplot to each variable
-g.map(sns.kdeplot, "sepal_length").add_legend()
-g.map(sns.kdeplot, "sepal_width").add_legend()
-g.map(sns.kdeplot, "petal_length").add_legend()
-g.map(sns.kdeplot, "petal_width").add_legend()
+g = sns.FacetGrid(dataset,hue="Species",height=5)
+g = g.map(sns.kdeplot, 'Sepal-Width').add_legend()
 
-# Adjust layout
-plt.tight_layout()
+g = sns.FacetGrid(dataset,hue="Species",height=5)
+g = g.map(sns.kdeplot, 'Petal-Length').add_legend()
 
-# Save the combined plot
-plt.savefig("iris_combined_line_chart")
+g = sns.FacetGrid(dataset,hue="Species",height=5)
+g = g.map(sns.kdeplot, 'Petal-Width').add_legend()
+
+# Outputing all plots created above (all but histograms)
+plt.show()
