@@ -378,34 +378,78 @@ plt.savefig("iris_scatterplot")
 
 # plt.show()
 plt.close("all")  
+'''
+# Line Chart 
 
+#palette = {"setosa": "darkturquoise",           # defining the colours for each species
+#        "versicolor": "blue", 
+#        "virginica": "darkviolet"
+#        }
 
-# Create a KDE line chart
+g = sns.FacetGrid(df,hue="species",height=5)
+g = g.map(sns.kdeplot, "sepal_length").add_legend()
+plt.tight_layout()  
+plt.savefig("iris_line_chart_sepal_length") 
 
-palette = {"setosa": "darkturquoise",                       # set the palette for Iris species
-        "versicolor": "blue",                               # set the palette for Iris species
-        "virginica": "darkviolet"}                          # set the palette for Iris species
+g = sns.FacetGrid(df,hue="species",height=5)
+g = g.map(sns.kdeplot, "sepal_width").add_legend()
+plt.tight_layout()  
+plt.savefig("iris_line_chart_sepal_width") 
 
-sns.set_palette(palette.values())                           # sets my palette above as Seaborn default kept overriding it.
+g = sns.FacetGrid(df,hue="species",height=5)
+g = g.map(sns.kdeplot, "petal_length").add_legend()
+plt.tight_layout()  
+plt.savefig("iris_line_chart_petal_length") 
 
-for feature in ["sepal_length",                             # loop through each variable
-                "sepal_width",                              # loop through each variable
-                "petal_length",                             # loop through each variable
-                "petal_width"]:                             # loop through each variable
-    g = sns.FacetGrid(df, hue="species", height=5)          # creates a line plot of the iris data, each grid is a different species. Species dictate the colour
-                                                            # Species dictate the colour
-                                                            
-    g = g.map(sns.kdeplot,                                  # maps a KDE plot 
-                feature,                                    # onto each grid 
-                shade=True,                                 # adds shade beneath the curve
-                palette=palette).add_legend()               # with the specified palette and a legend
-    
-    plt.title(f"Iris {feature.capitalize()} Distribution", 
-            fontsize=14,                                    # font size = controls the size of the font and sets it to 18.                       
-            fontweight="bold",                              # font weight = controls the weight of the font - bold                      
-            family="monospace")                             # family = controls the font family of the font - monospace)))
-    
-    plt.tight_layout()                                      # adjusts the layout of the plots 
-    plt.savefig(f"iris_line_chart_{feature}.png")           # saves each plot with a filename indicating the feature being plotted.
+g = sns.FacetGrid(df,hue="species",height=5)
+g = g.map(sns.kdeplot, "petal_width").add_legend()
+plt.tight_layout() 
+plt.savefig("iris_line_chart_petal_width") 
 
+#plt.show()             # Outputing all plots created above
+
+'''
+'''
+palette = {"setosa": "darkturquoise",           # defining the colours for each species
+        "versicolor": "blue", 
+        "virginica": "darkviolet"
+        }
+
+g = sns.FacetGrid(df,hue="species",height=5)
+g = g.map(sns.kdeplot, "sepal_length", palette=palette).add_legend()
+plt.tight_layout()  
+plt.savefig("iris_line_chart_sepal_length2") 
+
+g = sns.FacetGrid(df,hue="species",height=5)
+g = g.map(sns.kdeplot, "sepal_width", palette=palette).add_legend()
+plt.tight_layout()  
+plt.savefig("iris_line_chart_sepal_width2") 
+
+g = sns.FacetGrid(df,hue="species",height=5)
+g = g.map(sns.kdeplot, "petal_length", palette=palette).add_legend()
+plt.tight_layout()  
+plt.savefig("iris_line_chart_petal_length2") 
+
+g = sns.FacetGrid(df,hue="species",height=5)
+g = g.map(sns.kdeplot, "petal_width", palette=palette).add_legend()
+plt.tight_layout() 
+plt.savefig("iris_line_chart_petal_width2") 
+
+#plt.show()             # Outputing all plots created above
+'''
+
+palette = {"setosa": "darkturquoise",
+        "versicolor": "blue", 
+        "virginica": "darkviolet"}
+
+sns.set_palette(palette.values())
+
+# Create FacetGrid and map KDE plots with the specified palette
+for feature in ['sepal_length', 'sepal_width', 'petal_length', 'petal_width']:
+    g = sns.FacetGrid(df, hue="species", height=5)
+    g = g.map(sns.kdeplot, feature, palette=palette).add_legend()
+    plt.tight_layout()
+    plt.savefig(f"iris_line_chart_{feature}_2.png")
+
+# Uncomment the line below if you want to display all plots at once
 # plt.show()
