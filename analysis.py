@@ -1,5 +1,5 @@
 # analysis.py
-# Project: research the dataset, supported by documentation and code. 
+# Project: research the Iris dataset, supported by documentation and code. 
 # Author: Sharon Curley
 
 
@@ -23,69 +23,68 @@ warnings.filterwarnings("ignore")
 df = pd.read_csv("https://raw.githubusercontent.com/mwaskom/seaborn-data/master/iris.csv")             # Reading the dataset “Irisdata.csv”.
 
 with open("summary.txt", "w") as f:
-    
-    print("Top 5 rows of the dataset with their columns using df.head(): \n",file=f)
-    
-    print(df.head(), file=f)                        # Displays the top 5 rows of the dataset with their columns.                                        
 
-    print("\n", file=f) 
+        print("Top 5 rows of the dataset with their columns using df.head(): \n",file=f)
 
-    print("The following displays the dataset using df(): \n",file=f)
+        print(df.head(), file=f)        # Displays the top 5 rows of the dataset with their columns.                                        
 
-    print(df, file=f)                               # Displays the dataset
+        print("\n", file=f) 
 
-    print("\n", file=f) 
+        print("The following displays the dataset using df(): \n",file=f)
 
-    print("Below is the three class or species types of iris in the data set: \n",file=f)
+        print(df, file=f)               # Displays the dataset
 
-    print(df["species"].value_counts(),file=f)      # Counts the number of times a particular species has occurred
+        print("\n", file=f) 
 
-    print("\n", file=f) 
+        print("Below is the three class or species types of iris in the data set: \n",file=f)
+
+        print(df["species"].value_counts(),file=f)      # Counts the number of times a particular species has occurred
+
+        print("\n", file=f) 
 
 # 4. Data Exploration
 
-    # print(df.info(), file=f)                      # Displays basic info about the dataset but did not work - research another way.
+        # print(df.info(), file=f)      # Displays basic info about the dataset but did not work - research another way.
 
-    print(f"A concise summary of the iris DataFrame using df.info(): \n",file=f)
+        print(f"A concise summary of the iris DataFrame using df.info(): \n",file=f)
 
-buffer = io.StringIO()                              # This line creates an in-memory buffer using StringIO. This buffer will be used to store the output of df.info()
-df.info(buf=buffer)                                 # Pipe output of DataFrame.info to buffer instead of sys.stdout
-s = buffer.getvalue()                               # Retrieves the contents of the buffer and stores them in the variable s.
-with open("summary.txt", "a",                       # get buffer content and append to a text file:
-            encoding="utf-8") as f:                 # This line opens a file named "df_info.txt" in write mode ("w"), specifying UTF-8 encoding.
-    f.write(s)                                      # This line writes the contents of the variable s (which holds the DataFrame information) into the opened file.
+buffer = io.StringIO()                  # This line creates an in-memory buffer using StringIO. This buffer will be used to store the output of df.info()
+df.info(buf=buffer)                     # Pipe output of DataFrame.info to buffer instead of sys.stdout
+s = buffer.getvalue()                   # Retrieves the contents of the buffer and stores them in the variable s.
+with open("summary.txt", "a",           # get buffer content and append to a text file:
+        encoding="utf-8") as f:         # This line opens a file named "df_info.txt" in write mode ("w"), specifying UTF-8 encoding.
+        f.write(s)                      # This line writes the contents of the variable s (which holds the DataFrame information) into the opened file.
 
-    print("\n",file=f) 
+        print("\n",file=f) 
 
-    print("Filter the data by row for detailed information using df.iloc(): \n ",file=f)
-    
-    print(df.iloc[0], file=f)                      # Filtering: use the index integer of the row, which gives complete information about the row. 
+        print("Filter the data by row for detailed information using df.iloc(): \n ",file=f)
 
-    print("\n", file=f) 
+        print(df.iloc[0], file=f)       # Filtering: use the index integer of the row, which gives complete information about the row. 
 
-    print("Here are some summary statistics for the iris DataFrame using df.describe(): \n ",file=f)
+        print("\n", file=f) 
 
-    print(df.describe(include="all"), file=f)      # Displays stats about the dataset.   
+        print("Here are some summary statistics for the iris DataFrame using df.describe(): \n ",file=f)
 
-    print("\n", file=f)
+        print(df.describe(include="all"), file=f)      # Displays stats about the dataset.   
 
-    print("The number of null or missing values in the iris DataFrame for each column using df.isnull(): ",file=f)
+        print("\n", file=f)
 
-    print("\n", file=f)
+        print("The number of null or missing values in the iris DataFrame for each column using df.isnull(): ",file=f)
 
-    print(df.isnull().sum().sum(), file=f)
-    
-    print("\n", file=f)
-    
-    print(df.isnull().sum(),file=f)
-    
-    
-    
+        print("\n", file=f)
+
+        print(df.isnull().sum().sum(), file=f)
+
+        print("\n", file=f)
+
+        print(df.isnull().sum(),file=f)
+
+
 # iris_histogram_sepal_length.png    
 df.hist("sepal_length",                         # Creating a Histogram only of Sepal Length "iris_histogram_sepal_length.png"             
 ec = "black",                                   # The ec (edge color) parameter define an edge on each bar with black outline.
 lw = 1.0,                                       # The lw (line width) can be increased
-color ="blueviolet",                             # The color parameter sets the color of the bars in the histogram.
+color ="blueviolet",                            # The color parameter sets the color of the bars in the histogram.
 alpha = 0.9,                                    # The alpha parameter sets the transparency of the bars.
 label="Sepal Length")                           # Creating a Histogram only of Sepal Length
 
@@ -120,7 +119,7 @@ plt.savefig("iris_histogram_sepal_length.png")
 df.hist("sepal_width",                          # Creating a Histogram only of Sepal Width = "iris_histogram_sepal_width.png"         
 ec = "black",                                   # The ec (edge color) parameter define an edge on each bar with black outline.
 lw = 1.0,                                       # The lw (line width) can be increased
-color ="fuchsia",                                # The color parameter sets the color of the bars in the histogram.
+color ="fuchsia",                               # The color parameter sets the color of the bars in the histogram.
 alpha = 0.9,                                    # The alpha parameter sets the transparency of the bars.
 label="Sepal Width")                            # Creating a Histogram only of Sepal Width
 
@@ -155,7 +154,7 @@ plt.savefig("iris_histogram_sepal_width.png")
 df.hist("petal_length",                         # Creating a Histogram only of Petal Length "iris_histogram_petal_length.png"             
 ec = "black",                                   # The ec (edge color) parameter define an edge on each bar with black outline.
 lw = 1.0,                                       # The lw (line width) can be increased
-color ="rebeccapurple",                                  # The color parameter sets the color of the bars in the histogram.
+color ="rebeccapurple",                         # The color parameter sets the color of the bars in the histogram.
 alpha = 0.9,                                    # The alpha parameter sets the transparency of the bars.
 label="Sepal Length")                           # Creating a Histogram only of Sepal Length
 
@@ -189,8 +188,8 @@ plt.savefig("iris_histogram_petal_length.png")
 # iris_histogram_petal_width.png
 df.hist("petal_width",                          # Creating a Histogram only of Petal Width = "iris_histogram_petal_width.png"         
 ec = "black",                                   # The ec (edge color) parameter define an edge on each bar with black outline.
-lw = 1.0,                                      # The lw (line width) can be increased
-color ="palevioletred",                             # The color parameter sets the color of the bars in the histogram.
+lw = 1.0,                                       # The lw (line width) can be increased
+color ="palevioletred",                         # The color parameter sets the color of the bars in the histogram.
 alpha = 0.9,                                    # The alpha parameter sets the transparency of the bars.
 label="Petal Width")                            # Creating a Histogram only of Sepal Width
 
@@ -229,33 +228,33 @@ palette = {"setosa": "darkturquoise",           # defining the colours for each 
         }
 
 f, axes = plt.subplots(2, 2,                    # sets four plots are being plotted on a 2 by 2 grid.
-            sharey=False,                       # y-axis scales will not be shared among the subplots, default is true
-            figsize=(12, 8)                     # set figure size
-            )   
+        sharey=False,                           # y-axis scales will not be shared among the subplots, default is true
+        figsize=(12, 8)                         # set figure size
+        )   
 
 sns.boxplot(x="species",                        # create boxplot for species       
-            y="petal_length",                   # and petal_length
-            palette=palette,                    # palette as per species above
-            data=df,                            # data source is the dataframe
-            ax = axes[0,0])                     # ax parameter specifies the subplot where each boxplot will be drawn.                      
+        y="petal_length",                       # and petal_length
+        palette=palette,                        # palette as per species above
+        data=df,                                # data source is the dataframe
+        ax = axes[0,0])                         # ax parameter specifies the subplot where each boxplot will be drawn.                      
 
 sns.boxplot(x="species",                        # create boxplot for species   
-            y="sepal_length",                   # and sepal_length
-            palette=palette,                    # palette as per species above
-            data=df,                            # data source is the dataframe
-            ax=axes[0,1])                       # ax parameter specifies the subplot where each boxplot will be drawn.
+        y="sepal_length",                       # and sepal_length
+        palette=palette,                        # palette as per species above
+        data=df,                                # data source is the dataframe
+        ax=axes[0,1])                           # ax parameter specifies the subplot where each boxplot will be drawn.
 
 sns.boxplot(x="species",                        # create boxplot for species
-            y="petal_width",                    # and petal_width 
-            palette=palette,                    # palette as per species above
-            data=df,                            # data source is the dataframe
-            ax=axes[1,0])                       # ax parameter specifies the subplot where each boxplot will be drawn.
+        y="petal_width",                        # and petal_width 
+        palette=palette,                        # palette as per species above
+        data=df,                                # data source is the dataframe
+        ax=axes[1,0])                           # ax parameter specifies the subplot where each boxplot will be drawn.
 
 sns.boxplot(x="species",                        # create boxplot for species
-            y="sepal_width",                    # and sepal_width
-            palette=palette,                    # palette as per species above
-            data=df,                            # data source is the dataframe
-            ax=axes[1,1])                       # ax parameter specifies the subplot where each boxplot will be drawn.
+        y="sepal_width",                        # and sepal_width
+        palette=palette,                        # palette as per species above
+        data=df,                                # data source is the dataframe
+        ax=axes[1,1])                           # ax parameter specifies the subplot where each boxplot will be drawn.
 
 f.suptitle("Boxplot of the Iris Petal and Sepal measurements", # set title
         fontsize=18,                            # font size = controls the size of the font and sets it to 18.
@@ -270,95 +269,95 @@ plt.close("all")                                # closing all previous open plot
 # PCC (Pearson correlation coefficient)
 
 with open("summary.txt", "a") as f:             # open the summary.txt for amend
-    f.write(s)                                  # write to f
+        f.write(s)                              # write to f
 
-    print("\n", file=f)                         # space line
-    
-    print("The following displays the Pearson correlation coefficient: \n", file=f)
+        print("\n", file=f)                     # space line
 
-    print(df[["petal_length", "petal_width", "sepal_length", "sepal_width"]].corr(),file=f)  # Correlation
+        print("The following displays the Pearson correlation coefficient: \n", file=f)
 
-    print("\n", file=f)
+        print(df[["petal_length", "petal_width", "sepal_length", "sepal_width"]].corr(),file=f)  # Correlation
+
+        print("\n", file=f)
 
 
 # Heatmap using Seaborn
 
 correlation_df = df[["petal_length", "petal_width", "sepal_length", "sepal_width"]].corr()
 
-axis_corr = sns.heatmap(        # create a heatmap using Seaborn's heatmap function
-    correlation_df,             # define what data to use
-    vmin=-1,                    # set variable min to -1
-    vmax=1,                     # set variable max to 1
-    center=0,                   # specifies the center value for the colormap
-    cmap="Purples",             # sets the colour pallette
-    square=True,                # all cells are square
-    annot=True,                 # Display correlation values in each box
-    )
+axis_corr = sns.heatmap(                        # create a heatmap using Seaborn's heatmap function
+        correlation_df,                         # define what data to use
+        vmin=-1,                                # set variable min to -1
+        vmax=1,                                 # set variable max to 1
+        center=0,                               # specifies the center value for the colormap
+        cmap="Purples",                         # sets the colour pallette
+        square=True,                            # all cells are square
+        annot=True,                             # Display correlation values in each box
+        )
 
-plt.savefig("iris_heatmap")                 # save to png.
+plt.savefig("iris_heatmap")                     # save to png.
 
 plt.close("all")   
 
 
 # Scatterplot Diagrams
 
-setosa=df[df["species"]=="setosa"]
-versicolor =df[df["species"]=="versicolor"]
-virginica =df[df["species"]=="virginica"]
+setosa=df[df["species"]=="setosa"]              # define the variable 
+versicolor =df[df["species"]=="versicolor"]     # define the variable 
+virginica =df[df["species"]=="virginica"]       # define the variable 
 
-fig,ax=plt.subplots(1,2,figsize=(16, 8))
+fig,ax=plt.subplots(1,2,figsize=(16, 8))        # set the two plots - no 1 & 2
 
-setosa.plot(x="sepal_length",               # set x axis
-            y="sepal_width",                # set y axis
-            kind="scatter",                 # scatter plot
-            ax=ax[0],                       # set diagram 1
-            label="I. Setosa",              # label the first species
-            color="darkturquoise",          # define a colour
-            marker="^"                      # change dots to triangles
-            )
-
-versicolor.plot(x="sepal_length",           # set x axis
-                y="sepal_width",            # set y axis
-                kind="scatter",             # scatter plot
-                ax=ax[0],                   # set diagram 1
-                label="I. Versicolor",      # label the second species
-                color="blue",               # define a colour
-                marker="^"                  # change dots to triangles
+setosa.plot(x="sepal_length",                   # set x axis
+                y="sepal_width",                # set y axis
+                kind="scatter",                 # scatter plot
+                ax=ax[0],                       # set diagram 1
+                label="I. Setosa",              # label the first species
+                color="darkturquoise",          # define a colour
+                marker="^"                      # change dots to triangles
                 )
 
-virginica.plot(x="sepal_length",            # set x axis
-                y="sepal_width",            # set y axis
-                kind="scatter",             # scatter plot
-                ax=ax[0],                   # set diagram 1
-                label="I. Virginica",       # label the third species
-                color="darkviolet",         # define a colour
-                marker="^"                  # change dots to triangles
+versicolor.plot(x="sepal_length",               # set x axis
+                y="sepal_width",                # set y axis
+                kind="scatter",                 # scatter plot
+                ax=ax[0],                       # set diagram 1
+                label="I. Versicolor",          # label the second species
+                color="blue",                   # define a colour
+                marker="^"                      # change dots to triangles
                 )
 
-setosa.plot(x="petal_length",               # set x axis
-            y="petal_width",                # set y axis
-            kind="scatter",                 # scatter plot
-            ax=ax[1],                       # set diagram 2
-            label="I. Setosa",              # label the first species
-            color="darkturquoise",          # define a colour
-            marker="^"                      # change dots to triangles
-            )
-
-versicolor.plot(x="petal_length",           # set x axis
-                y="petal_width",            # set y axis
-                kind="scatter",             # scatter plot
-                ax=ax[1],                   # set diagram 2
-                label="I. Versicolor",      # label the second species
-                color="blue",               # define a colour
-                marker="^"                  # change dots to triangles
+virginica.plot(x="sepal_length",                # set x axis
+                y="sepal_width",                # set y axis
+                kind="scatter",                 # scatter plot
+                ax=ax[0],                       # set diagram 1
+                label="I. Virginica",           # label the third species
+                color="darkviolet",             # define a colour
+                marker="^"                      # change dots to triangles
                 )
-virginica.plot(x="petal_length",            # set x axis
-                y="petal_width",            # set y axis
-                kind="scatter",             # scatter plot
-                ax=ax[1],                   # set diagram 3
-                label="I. Virginica",       # label the third species
-                color="darkviolet",         # define a colour
-                marker="^"                  # change dots to triangles
+
+setosa.plot(x="petal_length",                   # set x axis
+                y="petal_width",                # set y axis
+                kind="scatter",                 # scatter plot
+                ax=ax[1],                       # set diagram 2
+                label="I. Setosa",              # label the first species
+                color="darkturquoise",          # define a colour
+                marker="^"                      # change dots to triangles
+                )
+
+versicolor.plot(x="petal_length",               # set x axis
+                y="petal_width",                # set y axis
+                kind="scatter",                 # scatter plot
+                ax=ax[1],                       # set diagram 2
+                label="I. Versicolor",          # label the second species
+                color="blue",                   # define a colour
+                marker="^"                      # change dots to triangles
+                )
+virginica.plot(x="petal_length",                # set x axis
+                y="petal_width",                # set y axis
+                kind="scatter",                 # scatter plot
+                ax=ax[1],                       # set diagram 3
+                label="I. Virginica",           # label the third species
+                color="darkviolet",             # define a colour
+                marker="^"                      # change dots to triangles
                 )
 
 ax[0].set_title("Sepal Width vs. Sepal Length for Iris Species", # set title
@@ -382,30 +381,32 @@ plt.close("all")
 
 # Create a KDE line chart
 
-palette = {"setosa": "darkturquoise",                       # set the palette for Iris species
-        "versicolor": "blue",                               # set the palette for Iris species
-        "virginica": "darkviolet"}                          # set the palette for Iris species
+palette = {"setosa": "darkturquoise",                   # set the palette for Iris species
+        "versicolor": "blue",                           # set the palette for Iris species
+        "virginica": "darkviolet"}                      # set the palette for Iris species
 
-sns.set_palette(palette.values())                           # sets my palette above as Seaborn default kept overriding it.
+sns.set_palette(palette.values())                       # sets my palette above as Seaborn default kept overriding it.
 
-for feature in ["sepal_length",                             # loop through each variable
-                "sepal_width",                              # loop through each variable
-                "petal_length",                             # loop through each variable
-                "petal_width"]:                             # loop through each variable
-    g = sns.FacetGrid(df, hue="species", height=5)          # creates a line plot of the iris data, each grid is a different species. Species dictate the colour
-                                                            # Species dictate the colour
-                                                            
-    g = g.map(sns.kdeplot,                                  # maps a KDE plot 
-                feature,                                    # onto each grid 
-                shade=True,                                 # adds shade beneath the curve
-                palette=palette).add_legend()               # with the specified palette and a legend
-    
-    plt.title(f"Iris {feature.capitalize()} Distribution", 
-            fontsize=14,                                    # font size = controls the size of the font and sets it to 18.                       
-            fontweight="bold",                              # font weight = controls the weight of the font - bold                      
-            family="monospace")                             # family = controls the font family of the font - monospace)))
-    
-    plt.tight_layout()                                      # adjusts the layout of the plots 
-    plt.savefig(f"iris_line_chart_{feature}.png")           # saves each plot with a filename indicating the feature being plotted.
+for feature in ["sepal_length",                         # loop through each variable
+                "sepal_width",                          # loop through each variable
+                "petal_length",                         # loop through each variable
+                "petal_width"]:                         # loop through each variable
+        g = sns.FacetGrid(df,                           # creates a line plot of the iris data
+                        hue="species",                  # each grid is a different species.
+                        height=5)                       # height of plot   
+        
+
+        g = g.map(sns.kdeplot,                          # maps a KDE plot 
+        feature,                                        # onto each grid 
+        shade=True,                                     # adds shade beneath the curve
+        palette=palette).add_legend()                   # with the specified palette and a legend
+
+        plt.title(f"Iris {feature.capitalize()} Distribution", 
+        fontsize=14,                                    # font size = controls the size of the font and sets it to 18.                       
+        fontweight="bold",                              # font weight = controls the weight of the font - bold                      
+        family="monospace")                             # family = controls the font family of the font - monospace)))
+
+        plt.tight_layout()                              # adjusts the layout of the plots 
+        plt.savefig(f"iris_line_chart_{feature}.png")   # saves each plot with a filename indicating the feature being plotted.
 
 # plt.show()
