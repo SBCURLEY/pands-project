@@ -4,7 +4,7 @@
 
 # Table of Contents
 1. Introduction
-   
+
 2. Import Libraries
 
 3. Load Data
@@ -12,7 +12,7 @@
     - 3.2 How to run the Python code
     - 3.3 Check the top 5 rows
     - 3.4 Initial inspection of the data
-    
+
 4. Data Exploration
     - 4.1 Check for the DataFrame with pandas .info() method
     - 4.2 Selecting data by row numbers df.iloc() method
@@ -23,32 +23,32 @@
 
 6. Data Analysis
     - 6.1 Univariate Analysis
-    - 6.1.1 Histogram
-      - 6.1.1.1   iris_histogram_petal_length.png
-      - 6.1.1.2   iris_histogram_petal_width.png
-      - 6.1.1.3   iris_histogram_sepal_length.png
-      - 6.1.1.4   iris_histogram_sepal_width.png
-    - 6.1.2 Box Plot
-      - 6.1.2.1 iris_boxplot.png
-    
+      - 6.1.1 Histogram
+        - 6.1.1.1   iris_histogram_petal_length.png
+        - 6.1.1.2   iris_histogram_petal_width.png
+        - 6.1.1.3   iris_histogram_sepal_length.png
+        - 6.1.1.4   iris_histogram_sepal_width.png
+      - 6.1.2 Box Plot
+        - 6.1.2.1 iris_boxplot.png
+
     - 6.2 Bivariate Analysis
-    - 6.2.1 Correlation Coefficients
-      - 6.2.1.1 iris_heatmap.png
-    - 6.2.2 Scatter Plots
-      - 6.2.2.1 iris_scatterplot.png
+      - 6.2.1 Correlation Coefficients
+        - 6.2.1.1 iris_heatmap.png
+      - 6.2.2 Scatter Plots
+        - 6.2.2.1 iris_scatterplot.png
             - Petal Width vs Petal Length
             - Sepal Width vs Sepal Length
-    - 6.2.3 Kernel Density Estimate (KDE) Plot
-      - 6.2.3.1 iris_line_chart_petal_length.png
-      - 6.2.3.2 iris_line_chart_petal_width.png
-      - 6.2.3.3 iris_line_chart_sepal_length.png
-      - 6.2.3.4 iris_line_chart_sepal_width.png
-        
+      - 6.2.3 Kernel Density Estimate (KDE) Plot
+        - 6.2.3.1 iris_line_chart_petal_length.png
+        - 6.2.3.2 iris_line_chart_petal_width.png
+        - 6.2.3.3 iris_line_chart_sepal_length.png
+        - 6.2.3.4 iris_line_chart_sepal_width.png
+
 7. Conclusion
-    
-8.  About Author
-    
-9.  List of references
+
+8. About Author
+
+9. List of references
 
 
 # 1. Introduction
@@ -73,8 +73,50 @@ The data set consists of 50 samples from each of three species of Iris (*I. Seto
 
 
 
+# 2. Imports Libraries
 
-## Project Description
+I imported the following libraries to analyse the dataset in Visual Studio Code.
+    - Pandas: Fundamental data analysis and manipulation library built on top of the Python programming language. It offers data structures and operations for manipulating numerical tables and time series. [[2]](https://www.w3schools.com/python/pandas/default.asp)
+    - NumPy: It contains functionality for multidimensional arrays, high-level mathematical functions such as linear algebra operations. [[3]](https://www.w3schools.com/python/numpy/default.asp)
+    - Matplotlib: Essential for creating static, animated, and interactive visualizations in Python. It is closely integrated with NumPy and provides a MATLAB-like interface for creating plots and visualizations. [[4]](https://www.w3schools.com/python/matplotlib_intro.asp)
+    - Seaborn: Seaborn provides a high-level interface for drawing attractive statistical graphics. [[5]](https://seaborn.pydata.org/)
+    - io: The io module  provides classes and functions for working with input and output streams, such as files, strings, and network connections, in a uniform way. [[6]](https://docs.python.org/3/library/io.html)
+    - warnings: to filter warning messages
+
+
+###### [2] [Pandas Tutorial w3schools](https://www.w3schools.com/python/pandas/default.asp)
+
+###### [3] [NumPy Tutorial w3schools ](https://www.w3schools.com/python/numpy/default.asp)
+
+###### [4] [Matplotlib Tutorial w3schools](https://www.w3schools.com/python/matplotlib_intro.asp)
+
+###### [5] [seaborn: statistical data visualization](https://seaborn.pydata.org/)
+
+###### [6] [io: Core tools for working with streams](https://docs.python.org/3/library/io.html)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### About this Project
 What the project does
