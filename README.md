@@ -118,10 +118,71 @@ I need to load the data set from a URL. The dataset is available on [GitHub](htt
 The data is now loaded, time to check it and explore but first how to run the code. 
 
 
+## 3.2 How to run the Python code
+### Rationale:
+### Findngs:
+### Statement & Sample Data:
 
+## 3.3 Check the top 5 rows
+### Rationale:
+### Findngs:
+### Statement & Sample Data:
 
+## 3.4 Initial inspection of the data
+### Rationale:
+### Findngs:
+### Statement & Sample Data:
 
+# 4. Data Exploration
+## 4.1 Check for the DataFrame with pandas .info() method
+### Rationale:
+### Findngs:
+### Statement & Sample Data:
 
+## 4.2 Selecting data by row numbers (.iloc)
+### Rationale:
+### Findngs:
+### Statement & Sample Data:
+
+## 4.3 Generate descriptive statistics with pandas .describe method
+### Rationale:
+### Findngs:
+### Statement & Sample Data:
+
+# 5. Cleaning the Dataset
+## 5.1 Identify missing data
+### Rationale:
+### Findngs:
+### Statement & Sample Data:
+
+# 6. Data Analysis
+## 6.1 Univariate Analysis
+## 6.1.1 Histogram
+### Rationale:
+### Findngs:
+
+## 6.1.2  Box Plot
+### Rationale:
+### Findngs:
+
+## 6.2 Bivariate Analysis
+## 6.2.1 Correlation Coefficients
+### Rationale:
+### Findngs:
+
+## 6.2.2 Scatter Plot
+### Rationale:
+### Findngs:
+
+## 6.2.3 Kernel Density Estimate (KDE) Plot
+### Rationale:
+### Findngs:
+
+# 7. Conclusion
+
+# 8. About Author
+
+# 9. Reference List
 
 
 
