@@ -111,7 +111,7 @@ I imported the following libraries to analyse the dataset in Visual Studio Code.
 I need to load the data set from a URL. The dataset is available on [GitHub](https://raw.githubusercontent.com/mwaskom/seaborn-data/master/iris.csv)
 
 <p align="center">
-<img width="500" height="350" src="img/Load_the_iris_data.png")
+<img width="500" height="50" src="img/Load_the_iris_data.png")
 </p>
 
 ### Findings:
