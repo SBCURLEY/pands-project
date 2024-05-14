@@ -1,6 +1,75 @@
-<h1 align="center">Pands Project</h1>
+<h1 align="center">Higher Diploma in Science in Computing (Data Analytics)</h1>
+<h1 align="center">Programming and Scripting - Iris Exploratory Data Project
+</h1>
 
-## Table of Contents
+# Table of Contents
+1. Introduction
+   
+2. Import Libraries
+
+3. Load Data
+    - 3.1 Load the Iris data
+    - 3.2 How to run the Python code
+    - 3.3 Check the top 5 rows
+    - 3.4 Initial inspection of the data
+    
+4. Data Exploration
+    - 4.1 Check for the DataFrame with pandas .info() method
+    - 4.2 Selecting data by row numbers df.iloc() method
+    - 4.3 Generate descriptive statistics with pandas .describe () method
+
+5. Cleaning the Dataset
+    - 5.1 Identify missing values
+
+6. Data Analysis
+    - 6.1 Univariate Analysis
+    - 6.1.1 Histogram
+      - 6.1.1.1   iris_histogram_petal_length.png
+      - 6.1.1.2   iris_histogram_petal_width.png
+      - 6.1.1.3   iris_histogram_sepal_length.png
+      - 6.1.1.4   iris_histogram_sepal_width.png
+    - 6.1.2 Box Plot
+      - 6.1.2.1 iris_boxplot.png
+    
+    - 6.2 Bivariate Analysis
+    - 6.2.1 Correlation Coefficients
+      - 6.2.1.1 iris_heatmap.png
+    - 6.2.2 Scatter Plots
+      - 6.2.2.1 iris_scatterplot.png
+            - Petal Width vs Petal Length
+            - Sepal Width vs Sepal Length
+    - 6.2.3 Kernel Density Estimate (KDE) Plot
+      - 6.2.3.1 iris_line_chart_petal_length.png
+      - 6.2.3.2 iris_line_chart_petal_width.png
+      - 6.2.3.3 iris_line_chart_sepal_length.png
+      - 6.2.3.4 iris_line_chart_sepal_width.png
+        
+7. Conclusion
+    
+8.  About Author
+    
+9.  List of references
+
+
+# 1. Introduction
+
+This repository contains my submission for the Programming and Scripting Project 2024 class project for the Programming and Scripting Module at ATU Galway as part of the Higher Diploma in Science in Data Analytics.
+The goal of this project is to research the Iris data set and write documentation and code in Python to investigate it.
+
+The Iris Dataset is renowned in the field of machine learning and statistics and is used for exploratory data analysis. The data set known as Fisher’s Iris data is a multivariate data set used and made famous by the British statistician and biologist [Ronald Fisher](https://en.wikipedia.org/wiki/Ronald_Fisher) in his 1936 paper "The use of multiple measurements in taxonomic problems as an example of linear discriminant analysis".
+
+The data set consists of 50 samples from each of three species of Iris (*I. Setosa*, *I. Virginica* and *I. Versicolor*). Four features were measured from each sample: the length and the width of the sepals and petals, in centimeters. [[1]].
+
+###### [1] [Iris flower data set](https://en.wikipedia.org/wiki/Iris_flower_data_set)
+
+
+
+
+
+
+
+
+
 
 ## Project Description
 
