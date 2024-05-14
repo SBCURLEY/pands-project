@@ -103,7 +103,7 @@ I imported the following libraries to analyse the dataset in Visual Studio Code.
 
 
 
-# 2. Imports Libraries
+# 3. Load Data
 
 ## 3.1 Load the Iris data
 
