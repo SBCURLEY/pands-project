@@ -103,6 +103,23 @@ I imported the following libraries to analyse the dataset in Visual Studio Code.
 
 
 
+# 2. Imports Libraries
+
+## 3.1 Load the Iris data
+
+### Rationale:
+I need to load the data set from a URL. The dataset is available on [GitHub](https://raw.githubusercontent.com/mwaskom/seaborn-data/master/iris.csv)
+
+<p align="center">
+<img width="500" height="350" src="img/Load_the_iris_data.png")
+</p>
+
+### Findings:
+The data is now loaded, time to check it and explore but first how to run the code. 
+
+
+
+
 
 
 
