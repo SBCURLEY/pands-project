@@ -68,7 +68,7 @@ The data set consists of 50 samples from each of three species of Iris (*I. Seto
 </p>
 
 
-[Picture credit:Pycodemates](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimmGMPw0jM_8xjndEHLKj7Hf5fngvWFOJ6_V4jiFb-U0sCHej3aTu08htye1_BgUBGKfnszHoeI_OLLZVf6NjwaG9oDYyOqkjdjeDajd3zg8VuCLVTzDM8hO2XEnarwQeM-CLvFgAwfNX53GR_HPatNPkUH7-7FAoNgFKjw7ujB9LwW5piE8GIPLjJHw/s722/irir_flowers.png)
+###### [Picture credit:Pycodemates](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimmGMPw0jM_8xjndEHLKj7Hf5fngvWFOJ6_V4jiFb-U0sCHej3aTu08htye1_BgUBGKfnszHoeI_OLLZVf6NjwaG9oDYyOqkjdjeDajd3zg8VuCLVTzDM8hO2XEnarwQeM-CLvFgAwfNX53GR_HPatNPkUH7-7FAoNgFKjw7ujB9LwW5piE8GIPLjJHw/s722/irir_flowers.png)
 
 
 
@@ -119,9 +119,50 @@ The data is now loaded, time to check it and explore but first how to run the co
 
 
 ## 3.2 How to run the Python code
+
+The following are required
+ - Visual Studio Code: download from [here](https://code.visualstudio.com/download)
+ - Github must be installed, get it [here](https://github.com/git-guides/install-git)
+ - Clone this [repository](https://github.com/SBCURLEY/pands-project/blob/main/analysis.py) from Github by typing the command below: git clone
+ - To run the Python script, first navigate to the Pands Folder > pands-project > analysis.py
+ - The GitHub link is [here](https://github.com/SBCURLEY/pands-project/blob/main/analysis.py)
+ - At the command line enter python the following
+ 
+**$ python analysis.py**
+ 
+The code will do the following:
+
+  1. Outputs a summary of each variable to a single text file called 'summary.txt'
+  
+  2. Saves a histogram of each variable to .png files:
+    ○ iris_histogram_petal_length.png
+    ○ iris_histogram_petal_width.png
+    ○ iris_histogram_sepal_length.png
+    ○ iris_histogram_sepal_width.png
+  
+  3. Outputs a scatter plot of each pair of variables to a .png files:
+    ○ iris_scatterplot.png
+  
+  4. Performs additional analysis to a .png files:
+    ○ iris_boxplot.png
+    ○ iris_heatmap.png
+    ○ iris_line_chart_petal_length.png
+    ○ iris_line_chart_petal_width.png
+    ○ iris_line_chart_sepal_length.png
+    ○ iris_line_chart_sepal_width.png
+
+
+
+
 ### Rationale:
+
 ### Findngs:
-### Statement & Sample Data:
+
+
+
+
+
+
 
 ## 3.3 Check the top 5 rows
 ### Rationale:
