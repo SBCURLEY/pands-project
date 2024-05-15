@@ -157,7 +157,7 @@ The code will do the following:
 ### Rationale:
 I can display the top 5 rows of the DataFrame using the df.head function.
 
-### Findngs:
+### Findings:
 The column heading variables have the following names:
  - sepal_length:  Sepal length in cm.
  - sepal_width: Sepal width in cm.
@@ -170,7 +170,7 @@ The column heading variables have the following names:
 print(df.head())
 
 <p align="left">
-<img width="750" height="35" src="img/df.head.png")
+<img width="350" height="70" src="img/df.head.png")
 </p>
 
 
@@ -178,54 +178,54 @@ print(df.head())
 
 ### Rationale:
 
-### Findngs:
+### Findings:
 
 ### Statement & Sample Data:
 
 # 4. Data Exploration
 ## 4.1 Check for the DataFrame with pandas .info() method
 ### Rationale:
-### Findngs:
+### Findings:
 ### Statement & Sample Data:
 
 ## 4.2 Selecting data by row numbers (.iloc)
 ### Rationale:
-### Findngs:
+### Findings:
 ### Statement & Sample Data:
 
 ## 4.3 Generate descriptive statistics with pandas .describe method
 ### Rationale:
-### Findngs:
+### Findings:
 ### Statement & Sample Data:
 
 # 5. Cleaning the Dataset
 ## 5.1 Identify missing data
 ### Rationale:
-### Findngs:
+### Findings:
 ### Statement & Sample Data:
 
 # 6. Data Analysis
 ## 6.1 Univariate Analysis
 ## 6.1.1 Histogram
 ### Rationale:
-### Findngs:
+### Findings:
 
 ## 6.1.2  Box Plot
 ### Rationale:
-### Findngs:
+### Findings:
 
 ## 6.2 Bivariate Analysis
 ## 6.2.1 Correlation Coefficients
 ### Rationale:
-### Findngs:
+### Findings:
 
 ## 6.2.2 Scatter Plot
 ### Rationale:
-### Findngs:
+### Findings:
 
 ## 6.2.3 Kernel Density Estimate (KDE) Plot
 ### Rationale:
-### Findngs:
+### Findings:
 
 # 7. Conclusion
 
