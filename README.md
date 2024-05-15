@@ -152,26 +152,34 @@ The code will do the following:
     - iris_line_chart_sepal_width.png
 
 
-
-
-### Rationale:
-
-### Findngs:
-
-
-
-
-
-
-
 ## 3.3 Check the top 5 rows
+
 ### Rationale:
+I can display the top 5 rows of the DataFrame using the df.head function.
+
 ### Findngs:
+The column heading variables have the following names:
+ - sepal_length:  Sepal length in cm.
+ - sepal_width: Sepal width in cm.
+ - petal_length:  Petal length in cm.
+ - petal_width: Petal width in cm.
+ - species.
+
 ### Statement & Sample Data:
 
+print(df.head())
+
+<p align="left">
+<img width="750" height="35" src="img/df.head.png")
+</p>
+
+
 ## 3.4 Initial inspection of the data
+
 ### Rationale:
+
 ### Findngs:
+
 ### Statement & Sample Data:
 
 # 4. Data Exploration
