@@ -170,7 +170,7 @@ The column heading variables have the following names:
 print(df.head())
 
 <p align="left">
-<img width="400" height="70" src="img/df.head.png")
+<img width="404" height="95" src="img/df.head.png")
 </p>
 
 
