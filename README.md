@@ -189,17 +189,25 @@ print (df)
 <img width="433" height="212" src="img/df.png")
 </p>
 
+print (df["species"].value_counts())
 
-
+<p align="left">
+<img width="174" height="79" src="img/df_species.png")
+</p>
 
 
 
 
 # 4. Data Exploration
+
 ## 4.1 Check for the DataFrame with pandas .info() method
+
 ### Rationale:
+
 ### Findings:
+
 ### Statement & Sample Data:
+
 
 ## 4.2 Selecting data by row numbers (.iloc)
 ### Rationale:
