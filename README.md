@@ -228,6 +228,13 @@ Upon review, I can gather the following information:
 
 The analysis will primarily focus on quantitative and quantitative types of variables. The quantitative values offer rich information, providing detailed insights into the dataset. Additionally, the quantitative variables allow for deeper dives into the data enhancing the depth of the analysis.
 
+### Statement & Sample Data:
+print (df.info())
+
+<p align="left">
+<img width="280" height="202" src="img/df_info.png")
+</p>
+
 ###### [7] [Pandas DataFrame info() Method-w3schools](https://www.w3schools.com/python/pandas/ref_df_info.asp)
 
 ###### [8] [A Comprehensive Guide to Using the Pandas DataFrame .info() Method-Machine Learning Tutorials](https://machinelearningtutorials.org/a-comprehensive-guide-to-using-the-pandas-dataframe-info-method/)
