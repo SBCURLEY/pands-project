@@ -247,7 +247,8 @@ print (df.info())
 ## 4.2 Selecting data by row numbers (.iloc)
 
 ### Rationale:
-The iloc property gets, or sets, the value(s) of the specified indexes. It specifies both row and column with an index. In this example, I look at row 1 in detail. [[11]](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.iloc.htm)
+The iloc property gets, or sets, the value(s) of the specified indexes. It specifies both row and column with an index. In this example, I look at row 1 in detail. 
+[[11]](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.iloc.htm)
 
 ### Findings:
  - Row 1 is an I. Setosa flower.
@@ -284,7 +285,7 @@ The pandas .describe method includes the following statistics:
 
 ### Findings:
 Key interpretations can be made from this function, both for the quantitative and qualitative data.
-The count of rows does match the count of values for sepal_length, sepal_width,  petal_length and petal_width, thus indicating that there are no missing values. The species column contains three unique values, I. Setosa is the most popular species. Note also that the sepal length goes from 4.3cm up to 7.9cm and with a mean of 5.84cm.
+The count of rows does match the count of values for sepal_length, sepal_width,  petal_length and petal_width, thus indicating that there are no missing values. The species column contains three unique values, *I. Setosa* is the most popular species. Note also that the sepal length goes from 4.3cm up to 7.9cm and with a mean of 5.84cm.
 
 ### Statement & Sample Data:
 df.describe(include="all")
