@@ -200,15 +200,41 @@ print (df["species"].value_counts())
 
 # 4. Data Exploration
 
-***
 
 ## 4.1 Check for the DataFrame with pandas .info() method
 
 ### Rationale:
+The .info() method in Pandas provides valuable dimensional insights about the DataFrame. The information contains the number of columns, column labels, column data types, memory usage, range index, and the number of cells in each column (non-null values). The info() method does not return any value, it prints the information.[[7]](https://www.w3schools.com/python/pandas/ref_df_info.asp)
+
+The output of the .info() method consists of several key components: [[8]]((https://machinelearningtutorials.org/a-comprehensive-guide-to-using-the-pandas-dataframe-info-method/)
+ - The total number of rows (entries) in the DataFrame.
+ - A summary of each column, including:
+    - The column name
+    - The number of non-null values
+    - The data type of the column
+    - The memory usage of the column
+
+df.info() was not displaying any result in st.write() so I had to reference the following to write df(info) to a txt file. This occurs because this pandas function doesn’t return anything back to Python which is why you get a value of None, it only prints.  [[9]](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.info.html) [[10]](https://discuss.streamlit.io/t/df-info-is-not-displaying-any-result-in-st-write/5100/2).
 
 ### Findings:
+Upon review, I can gather the following information:
+ - The DataFrame contains 150 rows and 5 columns.
+ - The columns are: sepal_length, sepal_width,  petal_length, petal_width and  species.
+ - No columns have non-null values, indicating that is no missing values in this dataset. 
+ - Four quantitative variables are numeric with type 'float64':  sepal_length, sepal_width,  petal_length and petal_width. Numeric Variables provide detailed insights into each iris physical characteristics. They give me exact measurements for the physical attributes of the iris. Numerical values allow me to correlate between different characteristics in an exact and precise way.
+ - One qualitative variable is categorical with type 'object': species. This attribute enable comprehensive analysis and comparison across the three species of iris. I can identify similarities between species, or patterns or variations that may exist within the dataset.
+ - The memory usage of this DataFrame is approximately 6.0+ KB.
+ - Show Counts: Whether to show non-null counts. None exist in this dataset.
 
-### Statement & Sample Data:
+The analysis will primarily focus on quantitative and quantitative types of variables. The quantitative values offer rich information, providing detailed insights into the dataset. Additionally, the quantitative variables allow for deeper dives into the data enhancing the depth of the analysis.
+
+###### [7] [Pandas DataFrame info() Method-w3schools](https://www.w3schools.com/python/pandas/ref_df_info.asp)
+
+###### [8] [A Comprehensive Guide to Using the Pandas DataFrame .info() Method-Machine Learning Tutorials](https://machinelearningtutorials.org/a-comprehensive-guide-to-using-the-pandas-dataframe-info-method/)
+
+###### [9] [pandas.DataFrame.info - Pandas Pydata](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.info.html)
+
+###### [10] [Streamlit- Df.info() is not displaying any result in st.write()](https://discuss.streamlit.io/t/df-info-is-not-displaying-any-result-in-st-write/5100/2)
 
 
 ## 4.2 Selecting data by row numbers (.iloc)
