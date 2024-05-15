@@ -186,7 +186,7 @@ The data set contains 150 observations of iris flowers. There are four columns o
 print (df)
 
 <p align="left">
-<img width="433" height="412" src="img/df.png")
+<img width="433" height="212" src="img/df.png")
 </p>
 
 
