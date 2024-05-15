@@ -177,10 +177,23 @@ print(df.head())
 ## 3.4 Initial inspection of the data
 
 ### Rationale:
-
+I would like to have a quick look at the DataFrame as imported and determine how many species of Iris are contained in this dataset.
 ### Findings:
+The data set contains 150 observations of iris flowers. There are four columns of measurements of the flowers in centimeters. The fifth column is the species of the flower observed. This dataset encompasses three species of iris flowers: *I. Setosa*, *I. Versicolor*, and *I. Virginica*, with 50 samples for each species.
 
 ### Statement & Sample Data:
+
+print (df)
+
+<p align="left">
+<img width="433" height="412" src="img/df.png")
+</p>
+
+
+
+
+
+
 
 # 4. Data Exploration
 ## 4.1 Check for the DataFrame with pandas .info() method
