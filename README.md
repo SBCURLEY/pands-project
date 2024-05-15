@@ -132,24 +132,24 @@ The following are required
  
 The code will do the following:
 
-  1. Outputs a summary of each variable to a single text file called 'summary.txt'
+ - Outputs a summary of each variable to a single text file called 'summary.txt'
   
-  2. Saves a histogram of each variable to .png files:
-    ○ iris_histogram_petal_length.png
-    ○ iris_histogram_petal_width.png
-    ○ iris_histogram_sepal_length.png
-    ○ iris_histogram_sepal_width.png
+ - Saves a histogram of each variable to .png files:
+    - iris_histogram_petal_length.png
+    - iris_histogram_petal_width.png
+    - iris_histogram_sepal_length.png
+    - iris_histogram_sepal_width.png
   
-  3. Outputs a scatter plot of each pair of variables to a .png files:
-    ○ iris_scatterplot.png
+ - Outputs a scatter plot of each pair of variables to a .png files:
+    - iris_scatterplot.png
   
-  4. Performs additional analysis to a .png files:
-    ○ iris_boxplot.png
-    ○ iris_heatmap.png
-    ○ iris_line_chart_petal_length.png
-    ○ iris_line_chart_petal_width.png
-    ○ iris_line_chart_sepal_length.png
-    ○ iris_line_chart_sepal_width.png
+ - Performs additional analysis to a .png files:
+    - iris_boxplot.png
+    - iris_heatmap.png
+    - iris_line_chart_petal_length.png
+    - iris_line_chart_petal_width.png
+    - iris_line_chart_sepal_length.png
+    - iris_line_chart_sepal_width.png
 
 
 
