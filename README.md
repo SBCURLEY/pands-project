@@ -200,6 +200,8 @@ print (df["species"].value_counts())
 
 # 4. Data Exploration
 
+***
+
 ## 4.1 Check for the DataFrame with pandas .info() method
 
 ### Rationale:
