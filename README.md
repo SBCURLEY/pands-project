@@ -206,7 +206,7 @@ print (df["species"].value_counts())
 ### Rationale:
 The .info() method in Pandas provides valuable dimensional insights about the DataFrame. The information contains the number of columns, column labels, column data types, memory usage, range index, and the number of cells in each column (non-null values). The info() method does not return any value, it prints the information.[[7]](https://www.w3schools.com/python/pandas/ref_df_info.asp)
 
-The output of the .info() method consists of several key components: [[8]]((https://machinelearningtutorials.org/a-comprehensive-guide-to-using-the-pandas-dataframe-info-method/)
+The output of the .info() method consists of several key components: [[8]](https://machinelearningtutorials.org/a-comprehensive-guide-to-using-the-pandas-dataframe-info-method/)
  - The total number of rows (entries) in the DataFrame.
  - A summary of each column, including:
     - The column name
