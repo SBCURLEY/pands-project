@@ -245,9 +245,22 @@ print (df.info())
 
 
 ## 4.2 Selecting data by row numbers (.iloc)
+
 ### Rationale:
+The iloc property gets, or sets, the value(s) of the specified indexes. It specifies both row and column with an index. In this example, I look at row 1 in detail. [[11]](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.iloc.htm)
+
 ### Findings:
+ - Row 1 is an I. Setosa flower.
+ - Sepal Length is 5.1cm, sepal width is 3.5cm
+ - Petal Length is 1.4cm, petal width is 0.2cm
+  
 ### Statement & Sample Data:
+Print (df.iloc[0])
+
+<p align="left">
+<img width="150" height="92" src="img/df_iloc.png")
+</p>
+
 
 ## 4.3 Generate descriptive statistics with pandas .describe method
 ### Rationale:
