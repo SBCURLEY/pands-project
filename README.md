@@ -339,7 +339,7 @@ print(df.isnull().sum())
 The data set consists of 50 samples from each of three species of Iris (I. Setosa, I. Virginica and I. Versicolor).
 Four features were measured from each sample: the length and the width of the sepals and petals, in centimeters. Based on the combination of these four features, Fisher developed a linear discriminant model to distinguish the species from each other [[16]](https://www.bogotobogo.com/python/scikit-learn/scikit_machine_learning_features_extraction.php)
 
-<p align="left">
+<p align="center">
 <img width="569" height="425" src="img/iris_photo_2015.png")
 </p>
 
