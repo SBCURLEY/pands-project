@@ -418,10 +418,24 @@ I used the following colours for each variable [[21]](https://www.statology.org/
 ###### [22] [List of named colours - matplotlib](https://matplotlib.org/stable/gallery/color/named_colors.html)
 
 
-
 ## 6.1.2  Box Plot
+
 ### Rationale:
+A boxplot is a very helpful plot as it shows various statistics in one plot, including the minimum, median, quartiles, interquartile range, outliers etc. The interquartile range (IQR) is the middle 50% of the data and can show the spread of the data. The whiskers show if the data is skewed in one direction or the other. The median is the line through the box. Outliers are generally classified as being outside 1.5 times the interquartile range.
+
+The boxplots below are generated using the [seaborn](https://seaborn.pydata.org/tutorial/introduction) library and generates comparison of each species. [[23]](https://seaborn.pydata.org/generated/seaborn.boxplot.html) [[24]](https://www.geeksforgeeks.org/boxplot-using-seaborn-in-python/) [[25]](https://datagy.io/seaborn-boxplot/)
+
 ### Findings:
+ - The boxplot below is very useful plot for clearly showing the differences in the distributions of the measurements across the three Iris species in the dataset. 
+ - The  *I. Setosa* stands out from the other two species as having much smaller petal dimensions . 
+ - The *I. Setosa* petal length and width dataset seems to be quite clustered, especially compared to the other two species of *Iris Versicolor* and *Iris Virginica* making them valuable for classification.
+
+###### [23] [Seaborn Boxplot](https://seaborn.pydata.org/generated/seaborn.boxplot.html)
+
+###### [24] [Boxplot using Seaborn in Python - Geeks for Geeks](https://www.geeksforgeeks.org/boxplot-using-seaborn-in-python/)
+
+###### [25] [Seaborn Boxplot – How to Create Box and Whisker Plots-datagy.io](https://datagy.io/seaborn-boxplot/)
+
 
 ## 6.2 Bivariate Analysis
 ## 6.2.1 Correlation Coefficients
