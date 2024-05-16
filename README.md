@@ -500,9 +500,11 @@ as follows [[30]](https://www.w3schools.com/datascience/ds_stat_correlation_matr
 ## 6.2.2 Scatter Plot
 
 ### Rationale:
-A scatter plot is a useful plot as it visually shows how the different variables or features in the data set correlate with one another. I have created two scatterplot diagrams showing the distribution of 
+A scatter plot is a useful plot as it visually shows how the different variables or features in the data set correlate with one another. I have created two scatterplot diagrams showing the distribution of:
+
  - Sepal Length and Width
- - Petal Length and Width 
+ - Petal Length and Width
+
 across the three species of Iris. [[31]](https://realpython.com/visualizing-python-plt-scatter/)
 
 
@@ -514,7 +516,7 @@ On the other hand, distinguishing between *I. Virginica* and *I. Versicolor* bas
 #### 6.1.2.1  iris_scatterplot.png
 
 <p align="left">
-<img width="1373" height="722" src="img/6.1.2.1  iris_scatterplot.png")
+<img width="1750" height="722" src="img/6.1.2.1  iris_scatterplot.png")
 </p>
 
 
