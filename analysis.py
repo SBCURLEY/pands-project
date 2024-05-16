@@ -202,7 +202,7 @@ fontweight="bold",                              # font weight = controls the wei
 family="monospace")                             # family = controls the font family of the font - monospace
 
 
-plt.xlabel("Sepal Width in cm",                 # Sets the label for the x-axis
+plt.xlabel("Petal Width in cm",                 # Sets the label for the x-axis
 fontsize=13,                                    # font size = controls the size of the font and sets it to 15
 style="italic",                                 # style = controls the style of the font - italic
 family="monospace")                             # family = controls the font family of the font - monospace                       
