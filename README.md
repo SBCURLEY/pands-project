@@ -390,9 +390,21 @@ I used the following colours for each variable [[21]](https://www.statology.org/
 
 #### 6.1.1.2  iris_histogram_petal_width.png
 
+<p align="left">
+<img width="520" height="400" src="img/6.1.1.2  iris_histogram_petal_width.png")
+</p>
+
 #### 6.1.1.3  iris_histogram_sepal_length.png
 
-#### .1.1.4  iris_histogram_sepal_width.png
+<p align="left">
+<img width="520" height="400" src="img/6.1.1.3  iris_histogram_sepal_length.png")
+</p>
+
+#### 6.1.1.4  iris_histogram_sepal_width.png
+
+<p align="left">
+<img width="520" height="400" src="img/6.1.1.4  iris_histogram_sepal_width.png")
+</p>
 
 
 ###### [18] [Real Python: Python Histogram Plotting: NumPy, Matplotlib, pandas & Seaborn](https://realpython.com/python-histograms/)
