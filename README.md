@@ -472,9 +472,9 @@ To summarize the results below
 
 From the above data, I can determine correlations between these main variables: Petal Width, Petal Length and Sepal Length.
  - Theory - PCC (Pearson correlation coefficient) is: [[29]](https://realpython.com/numpy-scipy-pandas-correlation-python/#pearson-correlation-coefficient)
-  - 1 is total positive linear correlation
-  - 0 is no linear correlation
-  - −1 is total negative linear correlation
+    - 1 is total positive linear correlation
+    - 0 is no linear correlation
+    - −1 is total negative linear correlation
 
 <p align="left">
 <img width="410" height="79" src="img/6.2 correlation.png")
