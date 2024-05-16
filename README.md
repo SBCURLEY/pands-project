@@ -445,9 +445,59 @@ The boxplots below are generated using the [seaborn](https://seaborn.pydata.org/
 
 
 ## 6.2 Bivariate Analysis
+The term bivariate analysis refers to the analysis of two variables. The purpose of a bivariate analysis is to understand the relationship between the two variables. [[26]](https://www.statology.org/bivariate-analysis-in-python/)
+
+There are four common ways to perform bivariate analysis:
+  1. Correlation Coefficients
+  2. Scatterplots
+  3. Simple Linear Regression
+  4. Bar Chart visualised using a stacked bar chart.
+
+I will focus on three for this project.
+
+[26] [How to Perform Bivariate Analysis in Python (With Examples)-Statology](https://www.statology.org/bivariate-analysis-in-python/)
+
+
 ## 6.2.1 Correlation Coefficients
+
 ### Rationale:
+Correlation measures both the strength and direction of the linear relationship between two variables. A coefficient of correlation is a value between -1 and +1 that denotes both the strength and directionality of a relationship between two variables. I can start this analysis by determining if there is a positive correlation between attributes. [[27]](https://towardsdatascience.com/let-us-understand-the-correlation-matrix-and-covariance-matrix-d42e6b643c22#:~:text=In%20simple%20words%2C%20both%20the,linear%20relationship%20between%20two%20variables)  [[28]](https://datagy.io/python-correlation-matrix/)
+
+
 ### Findings:
+To summarize the results below
+ - a high positive correlation between Petal Width and Petal Length (0.96)
+ - a high positive correlation between Petal Length and Sepal Length (0.87)
+ - a high positive correlation between Petal Width and Sepal Length (0.81)
+
+From the above data, I can determine correlations between these main variables: Petal Width, Petal Length and Sepal Length.
+ - Theory - PCC (Pearson correlation coefficient) is: [[29]](https://realpython.com/numpy-scipy-pandas-correlation-python/#pearson-correlation-coefficient)
+  - 1 is total positive linear correlation
+  - 0 is no linear correlation
+  - −1 is total negative linear correlation
+
+<p align="left">
+<img width="410" height="79" src="img/6.2 correlation.png")
+</p>
+
+The above results could be displayed on a heatmap using Seaborn's heatmap function 
+as follows [[30]](https://www.w3schools.com/datascience/ds_stat_correlation_matrix.asp). The above observations are clearer with a heatmap.
+
+<p align="left">
+<img width="500" height="400" src="img/6.2.1.1  iris_heatmap.png")
+</p>
+
+
+###### [27] [Towards Data Science: Baffled by Covariance and Correlation](https://towardsdatascience.com/let-us-understand-the-correlation-matrix-and-covariance-matrix-d42e6b643c22#:~:text=In%20simple%20words%2C%20both%20the,linear%20relationship%20between%20two%20variables)
+
+###### [28] [Datagy:Calculate and Plot a Correlation Matrix in Python and Pandas](https://datagy.io/python-correlation-matrix/)
+
+###### [29] [NumPy, SciPy, and pandas: Correlation With Python-Real Python](https://realpython.com/numpy-scipy-pandas-correlation-python/#pearson-correlation-coefficient)
+
+###### [30] [Data Science - Statistics Correlation Matrix - w3schools](https://www.w3schools.com/datascience/ds_stat_correlation_matrix.asp)
+
+
+
 
 ## 6.2.2 Scatter Plot
 ### Rationale:
