@@ -430,6 +430,13 @@ The boxplots below are generated using the [seaborn](https://seaborn.pydata.org/
  - The  *I. Setosa* stands out from the other two species as having much smaller petal dimensions . 
  - The *I. Setosa* petal length and width dataset seems to be quite clustered, especially compared to the other two species of *Iris Versicolor* and *Iris Virginica* making them valuable for classification.
 
+#### 6.1.2.1  iris_boxplot.png
+
+<p align="left">
+<img width="1000" height="762" src="img/6.1.2.1  iris_boxplot.png")
+</p>
+
+
 ###### [23] [Seaborn Boxplot](https://seaborn.pydata.org/generated/seaborn.boxplot.html)
 
 ###### [24] [Boxplot using Seaborn in Python - Geeks for Geeks](https://www.geeksforgeeks.org/boxplot-using-seaborn-in-python/)
