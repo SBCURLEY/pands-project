@@ -385,7 +385,7 @@ I used the following colours for each variable [[21]](https://www.statology.org/
 #### 6.1.1.1 iris_histogram_petal_length.png
 
 <p align="left">
-<img width="520" height="400" src="img/iris_photo_2015.png")
+<img width="520" height="400" src="img/6.1.1.1 iris_histogram_petal_length.png")
 </p>
 
 #### 6.1.1.2  iris_histogram_petal_width.png
