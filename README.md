@@ -336,7 +336,7 @@ print(df.isnull().sum())
 
 
 # 6. Data Analysis
-The data set consists of 50 samples from each of three species of Iris (I. Setosa, I. Virginica and I. Versicolor).
+The data set consists of 50 samples from each of three species of Iris (*I. Setosa*, *I. Virginica* and *I. Versicolor*).
 Four features were measured from each sample: the length and the width of the sepals and petals, in centimeters. Based on the combination of these four features, Fisher developed a linear discriminant model to distinguish the species from each other [[16]](https://www.bogotobogo.com/python/scikit-learn/scikit_machine_learning_features_extraction.php)
 
 <p align="center">
@@ -345,12 +345,67 @@ Four features were measured from each sample: the length and the width of the se
 
 [Picture credit: Python Machine Learning by Sebastian Raschka, 2015](https://www.bogotobogo.com/python/scikit-learn/scikit_machine_learning_features_extraction.php) 
 
-
-
 ## 6.1 Univariate Analysis
+A Univariate analysis focuses on understanding each variable in isolation. It is the simplest form of analysing data where each variable can be analysed separately. A Univariate analysis provides insights into the range, central tendency, dispersion, and shape of the distribution of each variable. [[17]](https://medium.com/@nomannayeem/mastering-exploratory-data-analysis-eda-a-comprehensive-python-pandas-guide-for-data-insights-c0be7c5b8889)
+
+Techniques for Univariate Analysis:
+- Histograms: Excellent for visually representing the distribution of a single continuous variable.
+- Box Plots: Valuable for identifying outliers and grasping the data's dispersion.
+- Count Plots: Ideal for categorical data, illustrating the frequency of each category.
+- Pie Charts: Visually engaging method to display the proportion of categories within a variable.
+- Bar Charts: Another effective means of depicting the frequency distribution of categorical data.
+
+I will be using the Histogram and Box Plot techniques for this project.
+
+[17] [Mastering Exploratory Data Analysis (EDA): A Comprehensive Python (Pandas) Guide for Data Insights and Storytelling](https://medium.com/@nomannayeem/mastering-exploratory-data-analysis-eda-a-comprehensive-python-pandas-guide-for-data-insights-c0be7c5b8889)
+
+
 ## 6.1.1 Histogram
+
 ### Rationale:
+I created and saved a histogram of each variable to .png files, which will show the underlying frequency distribution (shape) of the Iris dataset, thus allowing the inspection of the data for its underlying distribution, outliers, skewness, etc. [[18]](https://realpython.com/python-histograms/) [[19]](https://www.datacamp.com/tutorial/histograms-matplotlib) [[20]](https://python-graph-gallery.com/190-custom-matplotlib-title/)
+
+
 ### Findings:
+ - The below give me a clearer idea of the distribution of the data set.
+ - The highest frequency of the petal length is around 37 which is between 1 and 2.
+ - The highest frequency of the petal width is between 40 and 50 which is between 0.0 and 0.5.
+ - The highest frequency of the sepal length is between 25 and 30 which is between 5.5 and 6.
+ - The highest frequency of the sepal Width is around 35 and 40 which is between 3.0 and 3.5.
+ - The histogram for the petal lengths show a clear group of observations having petal lengths that are much smaller than the rest of the observations and similarly so with the petal widths. One species is separated from the other two. 
+ - The sepal lengths show quite a bit of variation with a number of peaks while sepal widths seem to be centred around 3 cms but with a few smaller peaks at both sides of 3 cm's - Normal Distribution
+
+I used the following colours for each variable [[21]](https://www.statology.org/matplotlib-histogram-color/) [[22]](https://matplotlib.org/stable/gallery/color/named_colors.html)
+
+ - petal_length: rebeccapurple
+ - petal_width: palevioletred
+ - sepal_length:  blueviolet
+ - sepal_width:  fuchsia
+
+#### 6.1.1.1 iris_histogram_petal_length.png
+
+<p align="left">
+<img width="520" height="400" src="img/iris_photo_2015.png")
+</p>
+
+#### 6.1.1.2  iris_histogram_petal_width.png
+
+#### 6.1.1.3  iris_histogram_sepal_length.png
+
+#### .1.1.4  iris_histogram_sepal_width.png
+
+
+###### [18] [Real Python: Python Histogram Plotting: NumPy, Matplotlib, pandas & Seaborn](https://realpython.com/python-histograms/)
+
+###### [19] [Datacamp: Histograms in Matplotlib](https://www.datacamp.com/tutorial/histograms-matplotlib)
+
+###### [20] [Python Graph Gallery-Custom Matplotlib Title](https://python-graph-gallery.com/190-custom-matplotlib-title/)
+
+###### [21] [Statology: How to Modify a Matplotlib Histogram Color (With Examples](https://www.statology.org/matplotlib-histogram-color/)
+
+###### [22] [List of named colours - matplotlib](https://matplotlib.org/stable/gallery/color/named_colors.html)
+
+
 
 ## 6.1.2  Box Plot
 ### Rationale:
