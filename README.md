@@ -497,11 +497,34 @@ as follows [[30]](https://www.w3schools.com/datascience/ds_stat_correlation_matr
 ###### [30] [Data Science - Statistics Correlation Matrix - w3schools](https://www.w3schools.com/datascience/ds_stat_correlation_matrix.asp)
 
 
-
-
 ## 6.2.2 Scatter Plot
+
 ### Rationale:
+A scatter plot is a useful plot as it visually shows how the different variables or features in the data set correlate with one another. I have created two scatterplot diagrams showing the distribution of 
+ - Sepal Length and Width
+ - Petal Length and Width 
+across the three species of Iris. [[31]](https://realpython.com/visualizing-python-plt-scatter/)
+
+
 ### Findings:
+In the scatterplot diagrams below [[32]](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.scatter.html) [[33]](https://www.w3schools.com/python/matplotlib_scatter.asp), it's evident that *I. Setosa* stands out distinctly from the other two species due to its linear separability, particularly noticeable in the analysis of sepal length and width. This separability arises from the significantly smaller petal length and width of *I. Setosa* compared to the other species, leading to minimal overlap between them in the scatterplots. [[34]](https://stackoverflow.com/questions/42818361/how-to-make-two-plots-side-by-side)
+
+On the other hand, distinguishing between *I. Virginica* and *I. Versicolor* based on this dataset proves to be more challenging, as indicated by the close proximity and overlapping clusters in the diagrams. However, it's worth noting that *I. Virginica* generally exhibits slightly longer petal lengths compared to *I. Versicolor* and notably longer ones compared to *I. Setosa*.
+
+#### 6.1.2.1  iris_scatterplot.png
+
+<p align="left">
+<img width="500" height="400" src="img/6.2.1.1  iris_heatmap.png")
+</p>
+
+
+###### [31] [Real Python- Visualizing Data in Python Using plt.scatter()](https://realpython.com/visualizing-python-plt-scatter/)
+
+###### [32] [matplotlib.pyplot.scatter - matplotlib.org](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.scatter.html)
+
+###### [33] [Matplotlib Scatter - Creating Scatter Plots - w3schools](https://www.w3schools.com/python/matplotlib_scatter.asp)
+
+###### [34] [Stack Overflow: How to make two plots side-by-side](https://stackoverflow.com/questions/42818361/how-to-make-two-plots-side-by-side)
 
 ## 6.2.3 Kernel Density Estimate (KDE) Plot
 ### Rationale:
