@@ -514,7 +514,7 @@ On the other hand, distinguishing between *I. Virginica* and *I. Versicolor* bas
 #### 6.1.2.1  iris_scatterplot.png
 
 <p align="left">
-<img width="500" height="400" src="img/6.2.1.1  iris_heatmap.png")
+<img width="1373" height="722" src="img/6.1.2.1  iris_scatterplot.png")
 </p>
 
 
