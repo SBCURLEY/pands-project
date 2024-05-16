@@ -529,8 +529,47 @@ On the other hand, distinguishing between *I. Virginica* and *I. Versicolor* bas
 ###### [34] [Stack Overflow: How to make two plots side-by-side](https://stackoverflow.com/questions/42818361/how-to-make-two-plots-side-by-side)
 
 ## 6.2.3 Kernel Density Estimate (KDE) Plot
+
 ### Rationale:
+A Kernel Density Estimate (KDE) plot is a visualization technique that offers a detailed view of the probability density of continuous variables.  [[35]](https://seaborn.pydata.org/generated/seaborn.kdeplot.html) [[36]](https://www.geeksforgeeks.org/kde-plot-visualization-with-pandas-and-seaborn/). I will be using the [Seaborn](https://seaborn.pydata.org/tutorial/introduction) library for this analysis.
+
 ### Findings:
+I can see again how these features differ in size and how *I. Versicolor* and *I. Virginica* are related to each other.
+By comparing the species [[37]](https://seaborn.pydata.org/generated/seaborn.set_style.html) using a line curve, it is observed that the feature sepal is not sufficient to distinguish *I. Versicolor* from *I. Virginica*. On the other hand, it is very clear how *I. Setosa* can be easily distinguished from *I. Versicolor* and *I. Virginica*. [[38]](https://www.digitalocean.com/community/tutorials/seaborn-kdeplot)
+
+#### 6.2.3.1  iris_line_chart_petal_length.png
+
+<p align="left">
+<img width="500" height="400" src="img/6.2.3.1  iris_line_chart_petal_length.png")
+</p>
+
+#### 6.2.3.2  iris_line_chart_petal_width.png
+
+<p align="left">
+<img width="500" height="400" src="img/6.2.3.2  iris_line_chart_petal_width.png")
+</p>
+
+#### 6.2.3.3  iris_line_chart_sepal_length.png
+
+<p align="left">
+<img width="500" height="400" src="img/6.2.3.3  iris_line_chart_sepal_length.png")
+</p>
+
+#### 6.2.3.4  iris_line_chart_sepal_width.png
+
+<p align="left">
+<img width="500" height="400" src="img/6.2.3.4  iris_line_chart_sepal_width.png")
+</p>
+
+###### [35] [seaborn.kdeplot - Seaborn](https://seaborn.pydata.org/generated/seaborn.kdeplot.html)
+
+###### [36] [KDE Plot Visualization with Pandas and Seaborn - geeksforgeeks](https://www.geeksforgeeks.org/kde-plot-visualization-with-pandas-and-seaborn/)
+
+###### [37] [seaborn.set_style — seaborn 0.13.2 documentation](https://seaborn.pydata.org/generated/seaborn.set_style.html)
+
+###### [38] [Seaborn Kdeplot - A Comprehensive Guide - Digital Ocean](https://www.digitalocean.com/community/tutorials/seaborn-kdeplot)
+
+
 
 # 7. Conclusion
 
