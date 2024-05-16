@@ -336,6 +336,17 @@ print(df.isnull().sum())
 
 
 # 6. Data Analysis
+The data set consists of 50 samples from each of three species of Iris (I. Setosa, I. Virginica and I. Versicolor).
+Four features were measured from each sample: the length and the width of the sepals and petals, in centimeters. Based on the combination of these four features, Fisher developed a linear discriminant model to distinguish the species from each other [[16]](https://www.bogotobogo.com/python/scikit-learn/scikit_machine_learning_features_extraction.php)
+
+<p align="left">
+<img width="154" height="96" src="img/iris_photo_2015.png")
+</p>
+
+[Picture credit: Python Machine Learning by Sebastian Raschka, 2015](https://www.bogotobogo.com/python/scikit-learn/scikit_machine_learning_features_extraction.php) 
+
+
+
 ## 6.1 Univariate Analysis
 ## 6.1.1 Histogram
 ### Rationale:
