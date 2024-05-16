@@ -573,104 +573,97 @@ By comparing the species [[37]](https://seaborn.pydata.org/generated/seaborn.set
 
 # 7. Conclusion
 
+The analysis of the Fisher's Iris dataset reveals how valuable it is for training machine learning algorithms for pattern recognition and clustering. It highlights two distinct clusters within the data: a larger cluster comprising an overlap of data points from *I. Versicolor* and *I. Virginia*, and a smaller cluster consisting solely of *I. Setosa*. This clustering is evident in both scatter matrix plots, line plots and statistical analysis, indicating less distinction between iris species within the larger cluster.
+
+This project demonstrates a journey from zero coding experience to a deeper understanding of Python's capabilities. The project allowed for the integration of various Python libraries and skills acquired during the lectures and weekly tasks since January '24. This project demonstrates Python's efficiency in handling large datasets compared to traditional tools like Excel which I would be familiar with. It increased my confidence in approaching machine learning projects. Overall, the project highlights the power of data analytics, showcasing how seemingly simple datasets, such as the Iris dataset, can yield profound insights when analysed comprehensively. I really enjoyed the journey and looking forward to the next leg of it.
+
+
 # 8. About Author
-
-# 9. Reference List
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### About this Project
-What the project does
-
-The iris data consisted of 150 samples of three species of Iris. The first column represents sepal length, the second column represents sepal width, the third column represents petal length, and the fourth column represents petal width. The picture of the Iris species is given below:
-
-<p align="center">
-<img width="528" height="291" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimmGMPw0jM_8xjndEHLKj7Hf5fngvWFOJ6_V4jiFb-U0sCHej3aTu08htye1_BgUBGKfnszHoeI_OLLZVf6NjwaG9oDYyOqkjdjeDajd3zg8VuCLVTzDM8hO2XEnarwQeM-CLvFgAwfNX53GR_HPatNPkUH7-7FAoNgFKjw7ujB9LwW5piE8GIPLjJHw/w531-h291/irir_flowers.png)")
-</p>
-
-The iris species look similar, but the difference in measurements can be used to classify them. The input variables are sepal length and width and petal length and width; each row represents an instance or observation. The output variable is species - setosa, versicolor, or virginica.
-
-<p align="center">
-<img width="324" height="300" src="https://raw.githubusercontent.com/ritchieng/machine-learning-dataschool/master/images/03_iris.png")
-</p>
-
-![Iris Raw data source](https://raw.githubusercontent.com/mwaskom/seaborn-data/master/iris.csv)
-
-
-### Use of this Project
-Why the project is useful
-
-
-### Get Started
-How users can get started with the project
-
-
-
-### Get Help
-Where users can get help with your project
-
-
-## Git Hub Repository Links
-[pands-project](https://github.com/SBCURLEY/pands-project)
-
-
-## Built With
-pandas - used to perform data manipulation and analysis
-
-numpy - used to perform a wide variety of mathematical operations on arrays
-
-matplotlib - used for data visualization and graphical plotting
-
-
-## Author
-**By Sharon Curley**
-
-I work at [Meissner](https://www.meissner.com/) as a Business Systems Analyst.
+- Sharon Curley
+  
+    My role is a Business Systems Analyst for [Meissner Corporation](https://www.meissner.com/) - a manufacturing company in Castlebar, Co. Mayo. The systems I am supporting currently are Microsoft Dynamics 365 (ERP) for all Meissner entities (Ireland, US, Switzerland, Germany & Italy). I initially started out in functional areas like Customer Service & Supply Chain as I was lucky to be one of the first crew members on board in this company in 2020. I have moved into the IT Dept since March last year. I have a background in SAP - projects & support, so was drawn back into this area when I saw the opportunity arise within Meissner. I have a keen interest in data as when I was a functional user that was the most frustrating part of my role - trying to get meaningful data from the systems we use. I have used excel to an advanced level and started with Power BI. I see a lot of opportunities within Meissner to develop in the Data area. I am hoping I will have the skills to do so someday.
 
 ![Meissner](https://www.meissner.com/wp-content/uploads/castlebar-brief-pdf-image.jpg)
 
+- [Git Hub Profile](https://github.com/SBCURLEY "Sharon Curley")
+
+- [Email](mailto:G00438863@atu.ie?subject=Hi "Hi!")
 
 
-Research Readme's
+# 9. Reference List
 
-https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes
+###### [1] [Iris flower data set]( https://en.wikipedia.org/wiki/Iris_flower_data_set)
 
-https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/
+###### [2] [Pandas Tutorial w3schools]( https://www.w3schools.com/python/pandas/default.asp)
 
-https://dev.to/rohit19060/how-to-write-stunning-github-readme-md-template-provided-5b09
+###### [3] [NumPy Tutorial w3schools ]( https://www.w3schools.com/python/numpy/default.asp)
 
-RESEARCH
+###### [4] [Matplotlib Tutorial w3schools](https://www.w3schools.com/python/matplotlib_intro.asp)
 
-Python – Basics of Pandas using Iris Dataset    https://www.geeksforgeeks.org/python-basics-of-pandas-using-iris-dataset/
+###### [5] [seaborn: statistical data visualization](https://seaborn.pydata.org/)
 
-Iris Dataset Classification with Python: A Tutorial     https://www.pycodemates.com/2022/05/iris-dataset-classification-with-python.html    PICTURE : IRIS SPECIES
+###### [6] [io: Core tools for working with streams](https://docs.python.org/3/library/io.html)
 
-Iris Dataset Analysis using Python | Classification | Machine Learning Project Tutorial       https://www.hackersrealm.net/post/iris-dataset-analysis-using-python   VIDEO
+###### [7] [Pandas DataFrame info() Method-w3schools](https://www.w3schools.com/python/pandas/ref_df_info.asp)
 
-Exploratory Data Analysis : Iris Dataset        https://medium.com/analytics-vidhya/exploratory-data-analysis-iris-dataset-4df6f045cda
+###### [8] [A Comprehensive Guide to Using the Pandas DataFrame .info() Method-Machine Learning Tutorials](https://machinelearningtutorials.org/a-comprehensive-guide-to-using-the-pandas-dataframe-info-method/)
 
-First step to Statistics (with Iris data)       https://medium.com/analytics-vidhya/first-step-to-statistics-with-iris-data-3d29c0820c5d
+###### [9] [pandas.DataFrame.info - Pandas Pydata](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.info.html)
 
-[Data Analysis] Cleaning data (4/11)            https://medium.com/@SamTaylor92/data-analysis-exploring-a-dataset-cleaning-data-19562be6cd0a
+###### [10] [Streamlit- Df.info() is not displaying any result in st.write()](https://discuss.streamlit.io/t/df-info-is-not-displaying-any-result-in-st-write/5100/2)
 
-Iris Dataset                                    https://www.ritchieng.com/machine-learning-iris-dataset/     PICTURE : IRIS ATTRIBUTES
+###### [11] [pandas.DataFrame.iloc - Pandas Pydata](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.iloc.html)
 
-Analyzing Iris Data                    https://github.com/Sahilll94/Analyzing-Iris-Dataset-/blob/main/Analyzing%20Iris%20Data.ipynb       GREAT ANALYSIS!
+###### [12] [Exploring pandas.DataFrame.describe for Descriptive Statistics-pythonlore]( https://www.pythonlore.com/exploring-pandas-dataframe-describe-for-descriptive-statistics/)
 
-How to align images in markdown         https://davidwells.io/snippets/how-to-align-images-in-markdown
+###### [13] [pandas.DataFrame.describe-Pandas Pydata](https://pandas.pydata.org/pandas-docs/version/0.20.2/generated/pandas.DataFrame.describe.html)
+
+###### [14] [IEEE 754: Wikipedia](https://en.wikipedia.org/wiki/IEEE_754)
+
+###### [15] [Data Cleaning with Python and Pandas: Detecting Missing Values Toward Data Science](https://towardsdatascience.com/data-cleaning-with-python-and-pandas-detecting-missing-values-3e9c6ebcf78b)
+
+###### [16] [Machine Learning 101-bogotobogo](https://www.bogotobogo.com/python/scikit-learn/scikit_machine_learning_features_extraction.php)
+
+###### [17] [Mastering Exploratory Data Analysis (EDA): A Comprehensive Python (Pandas) Guide for Data Insights and Storytelling](https://medium.com/@nomannayeem/mastering-exploratory-data-analysis-eda-a-comprehensive-python-pandas-guide-for-data-insights-c0be7c5b8889)
+
+###### [18] [Real Python: Python Histogram Plotting: NumPy, Matplotlib, pandas & Seaborn](https://realpython.com/python-histograms/)
+
+###### [19] [Datacamp: Histograms in Matplotlib](https://www.datacamp.com/tutorial/histograms-matplotlib)
+
+###### [20] [Python Graph Gallery-Custom Matplotlib Title](https://python-graph-gallery.com/190-custom-matplotlib-title/)
+
+###### [21] [Statology: How to Modify a Matplotlib Histogram Color (With Examples)]( https://www.statology.org/matplotlib-histogram-color/)
+
+###### [22] [List of named colours - matplotlib]( https://matplotlib.org/stable/gallery/color/named_colors.html)
+
+###### [23] [Seaborn Boxplot](https://seaborn.pydata.org/generated/seaborn.boxplot.html)
+
+###### [24] [Boxplot using Seaborn in Python - Geeks for Geeks]( https://www.geeksforgeeks.org/boxplot-using-seaborn-in-python/)
+
+###### [25] [Seaborn Boxplot – How to Create Box and Whisker Plots-datagy.io](https://datagy.io/seaborn-boxplot/)
+
+###### [26] [How to Perform Bivariate Analysis in Python](https://www.statology.org/bivariate-analysis-in-python/)
+
+###### [27] [Towards Data Science: Baffled by Covariance and Correlation]( https://towardsdatascience.com/let-us-understand-the-correlation-matrix-and-covariance-matrix-d42e6b643c22#:~:text=In%20simple%20words%2C%20both%20the,linear%20relationship%20between%20two%20variables)
+
+###### [28] [Datagy:Calculate and Plot a Correlation Matrix in Python and Pandas](https://datagy.io/python-correlation-matrix/)
+
+###### [29] [NumPy, SciPy, and pandas: Correlation With Python-Real Python](https://realpython.com/numpy-scipy-pandas-correlation-python/#pearson-correlation-coefficient)
+
+###### [30] [Data Science - Statistics Correlation Matrix - w3schools](https://www.w3schools.com/datascience/ds_stat_correlation_matrix.asp)
+
+###### [31] [Real Python- Visualizing Data in Python Using plt.scatter()](https://realpython.com/visualizing-python-plt-scatter/)
+
+###### [32] [matplotlib.pyplot.scatter - matplotlib.org](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.scatter.html)
+
+###### [33] [Matplotlib Scatter - Creating Scatter Plots - w3schools](https://www.w3schools.com/python/matplotlib_scatter.asp)
+
+###### [34] [Stack Overflow: How to make two plots side-by-side](https://stackoverflow.com/questions/42818361/how-to-make-two-plots-side-by-side)
+
+###### [35] [seaborn.kdeplot - Seaborn](https://seaborn.pydata.org/generated/seaborn.kdeplot.html)
+
+###### [36] [KDE Plot Visualization with Pandas and Seaborn - geeksforgeeks](https://www.geeksforgeeks.org/kde-plot-visualization-with-pandas-and-seaborn/)
+
+###### [37] [seaborn.set_style — seaborn 0.13.2 documentation](https://seaborn.pydata.org/generated/seaborn.set_style.html)
+
+###### [38] [Seaborn Kdeplot - A Comprehensive Guide - Digital Ocean](https://www.digitalocean.com/community/tutorials/seaborn-kdeplot)
