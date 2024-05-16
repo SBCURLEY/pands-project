@@ -295,21 +295,45 @@ df.describe(include="all")
 </p>
 
 
-##### [12] [Exploring pandas.DataFrame.describe for Descriptive Statistics-pythonlore](https://www.pythonlore.com/exploring-pandas-dataframe-describe-for-descriptive-statistics/)
+###### [12] [Exploring pandas.DataFrame.describe for Descriptive Statistics-pythonlore](https://www.pythonlore.com/exploring-pandas-dataframe-describe-for-descriptive-statistics/)
 
 ###### [13] [pandas.DataFrame.describe-Pandas Pydata](https://pandas.pydata.org/pandas-docs/version/0.20.2/generated/pandas.DataFrame.describe.html)
 
 
 
 
-
-
-
 # 5. Cleaning the Dataset
+
 ## 5.1 Identify missing data
+
 ### Rationale:
+Before analysis, I must clean the dataset, this could involve removing rows with NaN values, dropping unnecessary or constant columns, and improving readability. Missing Data can occur when no information is provided for one or more items or for a whole unit. In Dataframes many datasets arrive with missing data, either because it exists and was not collected or it never existed. In this dataset, there are no NaN (an acronym for Not a Number)  entered. Nan is a special floating-point value recognized by all systems that use the standard IEEE floating-point representation [[14]](https://en.wikipedia.org/wiki/IEEE_754)
+Firstly I have used the isnull() method to determine how may missing values are in the data set and identify them. [[15]](https://towardsdatascience.com/data-cleaning-with-python-and-pandas-detecting-missing-values-3e9c6ebcf78b)
+
+
+###### [14] [IEEE 754: Wikipedia](https://en.wikipedia.org/wiki/IEEE_754)
+
+###### [15] [Data Cleaning with Python and Pandas: Detecting Missing Values Toward Data Science](https://towardsdatascience.com/data-cleaning-with-python-and-pandas-detecting-missing-values-3e9c6ebcf78b)
+
+
 ### Findings:
+There are zero missing values.
+
+
 ### Statement & Sample Data:
+
+print(df.isnull().sum().sum())
+
+<p align="left">
+<img width="29" height="19" src="img/df_isnull_sum_sum.png")
+</p>
+
+print(df.isnull().sum())
+
+<p align="left">
+<img width="154" height="96" src="img/df_isnull_sum.png")
+</p>
+
 
 # 6. Data Analysis
 ## 6.1 Univariate Analysis
