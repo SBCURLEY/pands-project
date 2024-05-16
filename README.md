@@ -433,7 +433,7 @@ The boxplots below are generated using the [seaborn](https://seaborn.pydata.org/
 #### 6.1.2.1  iris_boxplot.png
 
 <p align="left">
-<img width="1000" height="762" src="img/6.1.2.1  iris_boxplot.png")
+<img width="1000" height="762" src="iris_boxplot.png")
 </p>
 
 
@@ -484,7 +484,7 @@ The above results could be displayed on a heatmap using Seaborn's heatmap functi
 as follows [[30]](https://www.w3schools.com/datascience/ds_stat_correlation_matrix.asp). The above observations are clearer with a heatmap.
 
 <p align="left">
-<img width="500" height="400" src="img/6.2.1.1  iris_heatmap.png")
+<img width="500" height="400" src="iris_heatmap.png")
 </p>
 
 
@@ -516,7 +516,7 @@ On the other hand, distinguishing between *I. Virginica* and *I. Versicolor* bas
 #### 6.1.2.1  iris_scatterplot.png
 
 <p align="left">
-<img width="2000" height="722" src="img/6.1.2.1  iris_scatterplot.png")
+<img width="2000" height="722" src="iris_scatterplot.png")
 </p>
 
 
@@ -540,25 +540,25 @@ By comparing the species [[37]](https://seaborn.pydata.org/generated/seaborn.set
 #### 6.2.3.1  iris_line_chart_petal_length.png
 
 <p align="left">
-<img width="500" height="400" src="img/6.2.3.1  iris_line_chart_petal_length.png")
+<img width="500" height="400" src="iris_line_chart_petal_length.png")
 </p>
 
 #### 6.2.3.2  iris_line_chart_petal_width.png
 
 <p align="left">
-<img width="500" height="400" src="img/6.2.3.2  iris_line_chart_petal_width.png")
+<img width="500" height="400" src="iris_line_chart_petal_width.png")
 </p>
 
 #### 6.2.3.3  iris_line_chart_sepal_length.png
 
 <p align="left">
-<img width="500" height="400" src="img/6.2.3.3  iris_line_chart_sepal_length.png")
+<img width="500" height="400" src="iris_line_chart_sepal_length.png")
 </p>
 
 #### 6.2.3.4  iris_line_chart_sepal_width.png
 
 <p align="left">
-<img width="500" height="400" src="img/6.2.3.4  iris_line_chart_sepal_width.png")
+<img width="500" height="400" src="iris_line_chart_sepal_width.png")
 </p>
 
 ###### [35] [seaborn.kdeplot - Seaborn](https://seaborn.pydata.org/generated/seaborn.kdeplot.html)
