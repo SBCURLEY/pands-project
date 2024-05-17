@@ -594,7 +594,7 @@ The project allowed for the integration of various Python libraries and skills a
 - [Email](mailto:G00438863@atu.ie?subject=Hi "Hi!")
 
 
-# 9. Reference List
+# 9. List of References
 
 ###### [1] [Iris flower data set]( https://en.wikipedia.org/wiki/Iris_flower_data_set)
 
