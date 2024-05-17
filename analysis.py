@@ -49,10 +49,7 @@ with open("summary.txt", "w") as f:
         buffer = io.StringIO()                  # This line creates an in-memory buffer using StringIO. This buffer will be used to store the output of df.info()
         df.info(buf=buffer)                     # Pipe output of DataFrame.info to buffer instead of sys.stdout
         s = buffer.getvalue()                   # Retrieves the contents of the buffer and stores them in the variable s.
-
-        #with open("summary.txt", "a",           # get buffer content and append to a text file:
-        #encoding="utf-8") as f:         # This line opens a file named "df_info.txt" in amend mode ("a"), specifying UTF-8 encoding.
-        f.write(s)                      # This line writes the contents of the variable s (which holds the DataFrame information) into the opened file.
+        f.write(s)                              # This line writes the contents of the variable s (which holds the DataFrame information) into the opened file.
 
         print("\n",file=f) 
 
@@ -270,7 +267,6 @@ plt.close("all")                                # closing all previous open plot
 # PCC (Pearson correlation coefficient)
 
 with open("summary.txt", "a") as f:             # open the summary.txt for amend
-        f.write(s)                              # write to f
 
         print("\n", file=f)                     # space line
 
