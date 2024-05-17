@@ -53,7 +53,7 @@
 
 # 1. Introduction
 
-This repository contains my submission for the Programming and Scripting Project 2024 class project for the Programming and Scripting Module at ATU Galway as part of the Higher Diploma in Science in Data Analytics.
+This repository contains my project submission for the Programming and Scripting Module at ATU Galway as part of the Higher Diploma in Science in Data Analytics.
 The goal of this project is to research the Iris data set and write documentation and code in Python to investigate it.
 
 The Iris Dataset is renowned in the field of machine learning and statistics and is used for exploratory data analysis. The data set known as Fisher’s Iris data is a multivariate data set used and made famous by the British statistician and biologist [Ronald Fisher](https://en.wikipedia.org/wiki/Ronald_Fisher) in his 1936 paper "The use of multiple measurements in taxonomic problems as an example of linear discriminant analysis".
@@ -121,12 +121,12 @@ The data is now loaded, time to check it and explore but first how to run the co
 ## 3.2 How to run the Python code
 
 The following are required
- - Visual Studio Code: download from [here](https://code.visualstudio.com/download)
- - Github must be installed, get it [here](https://github.com/git-guides/install-git)
- - Clone this [repository](https://github.com/SBCURLEY/pands-project/blob/main/analysis.py) from Github by typing the command below: git clone
+ - Visual Studio Code: download from [Visual Studio.com](https://code.visualstudio.com/download)
+ - Github must be installed, get it at [Git Hub.com](https://github.com/git-guides/install-git)
+ - Clone this [repository](https://github.com/SBCURLEY/pands-project/blob/main/analysis.py) from Github by typing the command: git clone in VS Code
  - To run the Python script, first navigate to the Pands Folder > pands-project > analysis.py
  - The GitHub link is [here](https://github.com/SBCURLEY/pands-project/blob/main/analysis.py)
- - At the command line enter python the following
+ - At the command line enter the following command
  
 **$ python analysis.py**
  
@@ -248,10 +248,10 @@ print (df.info())
 
 ### Rationale:
 The iloc property gets, or sets, the value(s) of the specified indexes. It specifies both row and column with an index. In this example, I look at row 1 in detail. 
-[[11]](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.iloc.htm)
+[[11]](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.iloc.html)
 
 ### Findings:
- - Row 1 is an I. Setosa flower.
+ - Row 1 is an *I. Setosa* flower.
  - Sepal Length is 5.1cm, sepal width is 3.5cm
  - Petal Length is 1.4cm, petal width is 0.2cm
   
@@ -308,7 +308,7 @@ df.describe(include="all")
 
 ### Rationale:
 Before analysis, I must clean the dataset, this could involve removing rows with NaN values, dropping unnecessary or constant columns, and improving readability. Missing Data can occur when no information is provided for one or more items or for a whole unit. In Dataframes many datasets arrive with missing data, either because it exists and was not collected or it never existed. In this dataset, there are no NaN (an acronym for Not a Number)  entered. Nan is a special floating-point value recognized by all systems that use the standard IEEE floating-point representation [[14]](https://en.wikipedia.org/wiki/IEEE_754)
-Firstly I have used the isnull() method to determine how may missing values are in the data set and identify them. [[15]](https://towardsdatascience.com/data-cleaning-with-python-and-pandas-detecting-missing-values-3e9c6ebcf78b)
+From previous analysis above, there does not appear to be missing values but I will check by using the isnull() method. This will determine how many missing values are in the data set and identify them if they exist. [[15]](https://towardsdatascience.com/data-cleaning-with-python-and-pandas-detecting-missing-values-3e9c6ebcf78b)
 
 
 ###### [14] [IEEE 754: Wikipedia](https://en.wikipedia.org/wiki/IEEE_754)
@@ -345,6 +345,8 @@ Four features were measured from each sample: the length and the width of the se
 
 [Picture credit: Python Machine Learning by Sebastian Raschka, 2015](https://www.bogotobogo.com/python/scikit-learn/scikit_machine_learning_features_extraction.php) 
 
+###### [16] [Machine Learning](https://www.bogotobogo.com/python/scikit-learn/scikit_machine_learning_features_extraction.php)
+
 ## 6.1 Univariate Analysis
 A Univariate analysis focuses on understanding each variable in isolation. It is the simplest form of analysing data where each variable can be analysed separately. A Univariate analysis provides insights into the range, central tendency, dispersion, and shape of the distribution of each variable. [[17]](https://medium.com/@nomannayeem/mastering-exploratory-data-analysis-eda-a-comprehensive-python-pandas-guide-for-data-insights-c0be7c5b8889)
 
@@ -355,7 +357,7 @@ Techniques for Univariate Analysis:
 - Pie Charts: Visually engaging method to display the proportion of categories within a variable.
 - Bar Charts: Another effective means of depicting the frequency distribution of categorical data.
 
-I will be using the Histogram and Box Plot techniques for this project.
+I will be exploring the Histogram and Box Plot techniques for this project.
 
 [17] [Mastering Exploratory Data Analysis (EDA): A Comprehensive Python (Pandas) Guide for Data Insights and Storytelling](https://medium.com/@nomannayeem/mastering-exploratory-data-analysis-eda-a-comprehensive-python-pandas-guide-for-data-insights-c0be7c5b8889)
 
@@ -367,7 +369,7 @@ I created and saved a histogram of each variable to .png files, which will show 
 
 
 ### Findings:
- - The below give me a clearer idea of the distribution of the data set.
+ - The following graphs give me a clearer idea of the distribution of the data set.
  - The highest frequency of the petal length is around 37 which is between 1 and 2.
  - The highest frequency of the petal width is between 40 and 50 which is between 0.0 and 0.5.
  - The highest frequency of the sepal length is between 25 and 30 which is between 5.5 and 6.
@@ -423,7 +425,7 @@ I used the following colours for each variable [[21]](https://www.statology.org/
 ### Rationale:
 A boxplot is a very helpful plot as it shows various statistics in one plot, including the minimum, median, quartiles, interquartile range, outliers etc. The interquartile range (IQR) is the middle 50% of the data and can show the spread of the data. The whiskers show if the data is skewed in one direction or the other. The median is the line through the box. Outliers are generally classified as being outside 1.5 times the interquartile range.
 
-The boxplots below are generated using the [seaborn](https://seaborn.pydata.org/tutorial/introduction) library and generates comparison of each species. [[23]](https://seaborn.pydata.org/generated/seaborn.boxplot.html) [[24]](https://www.geeksforgeeks.org/boxplot-using-seaborn-in-python/) [[25]](https://datagy.io/seaborn-boxplot/)
+The boxplots below are generated using the [Seaborn](https://seaborn.pydata.org/tutorial/introduction) library and generates comparison of each species. [[23]](https://seaborn.pydata.org/generated/seaborn.boxplot.html) [[24]](https://www.geeksforgeeks.org/boxplot-using-seaborn-in-python/) [[25]](https://datagy.io/seaborn-boxplot/)
 
 ### Findings:
  - The boxplot below is very useful plot for clearly showing the differences in the distributions of the measurements across the three Iris species in the dataset. 
@@ -480,7 +482,7 @@ From the above data, I can determine correlations between these main variables: 
 <img width="410" height="79" src="img/6.2 correlation.png")
 </p>
 
-The above results could be displayed on a heatmap using Seaborn's heatmap function 
+The above results could be displayed on a heatmap using the [Seaborn](https://seaborn.pydata.org/tutorial/introduction) library heatmap function 
 as follows [[30]](https://www.w3schools.com/datascience/ds_stat_correlation_matrix.asp). The above observations are clearer with a heatmap.
 
 <p align="left">
@@ -575,15 +577,18 @@ By comparing the species [[37]](https://seaborn.pydata.org/generated/seaborn.set
 
 The analysis of the Fisher's Iris dataset reveals how valuable it is for training machine learning algorithms for pattern recognition and clustering. It highlights two distinct clusters within the data: a larger cluster comprising an overlap of data points from *I. Versicolor* and *I. Virginia*, and a smaller cluster consisting solely of *I. Setosa*. This clustering is evident in both scatter matrix plots, line plots and statistical analysis, indicating less distinction between iris species within the larger cluster.
 
-This project demonstrates a journey from zero coding experience to a deeper understanding of Python's capabilities. The project allowed for the integration of various Python libraries and skills acquired during the lectures and weekly tasks since January '24. This project demonstrates Python's efficiency in handling large datasets compared to traditional tools like Excel which I would be familiar with. It increased my confidence in approaching machine learning projects. Overall, the project highlights the power of data analytics, showcasing how seemingly simple datasets, such as the Iris dataset, can yield profound insights when analysed comprehensively. I really enjoyed the journey and looking forward to the next leg of it.
+The project allowed for the integration of various Python libraries and skills acquired during the lectures and weekly tasks since January '24. It follows a journey for me from zero coding experience to a deeper understanding of Python's capabilities. This project demonstrates Python's efficiency in handling large datasets compared to traditional tools like Excel which I would be familiar with. It increased my confidence in approaching machine learning projects. Overall, the project highlights the power of data analytics, showcasing how seemingly simple datasets, such as the Iris dataset, can yield profound insights when analysed comprehensively. I really enjoyed the journey and looking forward to the next leg of it.
 
 
 # 8. About Author
 - Sharon Curley
   
-    My role is a Business Systems Analyst for [Meissner Corporation](https://www.meissner.com/) - a manufacturing company in Castlebar, Co. Mayo. The systems I am supporting currently are Microsoft Dynamics 365 (ERP) for all Meissner entities (Ireland, US, Switzerland, Germany & Italy). I initially started out in functional areas like Customer Service & Supply Chain as I was lucky to be one of the first crew members on board in this company in 2020. I have moved into the IT Dept since March last year. I have a background in SAP - projects & support, so was drawn back into this area when I saw the opportunity arise within Meissner. I have a keen interest in data as when I was a functional user that was the most frustrating part of my role - trying to get meaningful data from the systems we use. I have used excel to an advanced level and started with Power BI. I see a lot of opportunities within Meissner to develop in the Data area. I am hoping I will have the skills to do so someday.
+    My role is a Business Systems Analyst for [Meissner Corporation](https://www.meissner.com/) - a manufacturing company in Castlebar, Co. Mayo. The systems I am supporting currently are Microsoft Dynamics 365 (ERP) for all Meissner entities (Ireland, US, Switzerland, Germany & Italy). I initially started out in functional areas like Customer Service & Supply Chain as I was lucky to be one of the first crew members on board in this company in 2020. I have moved into the IT Dept since March last year. I have a background in SAP - projects & support, so was drawn back into this area when I saw the opportunity arise within Meissner. I have a keen interest in data as when I was a functional user that was the most frustrating part of my role - trying to get meaningful data from the systems we use. I have used excel to an advanced level and started with Power BI. I see a lot of opportunities within Meissner to develop in the Data area.
 
-![Meissner](https://www.meissner.com/wp-content/uploads/castlebar-brief-pdf-image.jpg)
+<p align="center">
+<img width="500" height="400" src="[iris_line_chart_sepal_width.png](https://www.meissner.com/wp-content/uploads/castlebar-brief-pdf-image.jpg)")
+</p>
+
 
 - [Git Hub Profile](https://github.com/SBCURLEY "Sharon Curley")
 
