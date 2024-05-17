@@ -359,7 +359,7 @@ Techniques for Univariate Analysis:
 
 I will be exploring the Histogram and Box Plot techniques for this project.
 
-[17] [Mastering Exploratory Data Analysis (EDA): A Comprehensive Python (Pandas) Guide for Data Insights and Storytelling](https://medium.com/@nomannayeem/mastering-exploratory-data-analysis-eda-a-comprehensive-python-pandas-guide-for-data-insights-c0be7c5b8889)
+###### [17] [Mastering Exploratory Data Analysis (EDA): A Comprehensive Python (Pandas) Guide for Data Insights and Storytelling](https://medium.com/@nomannayeem/mastering-exploratory-data-analysis-eda-a-comprehensive-python-pandas-guide-for-data-insights-c0be7c5b8889)
 
 
 ## 6.1.1 Histogram
@@ -457,7 +457,7 @@ There are four common ways to perform bivariate analysis:
 
 I will focus on three for this project.
 
-[26] [How to Perform Bivariate Analysis in Python (With Examples)-Statology](https://www.statology.org/bivariate-analysis-in-python/)
+###### [26] [How to Perform Bivariate Analysis in Python (With Examples)-Statology](https://www.statology.org/bivariate-analysis-in-python/)
 
 
 ## 6.2.1 Correlation Coefficients
@@ -586,7 +586,7 @@ The project allowed for the integration of various Python libraries and skills a
     My role is a Business Systems Analyst for [Meissner Corporation](https://www.meissner.com/) - a manufacturing company in Castlebar, Co. Mayo. The systems I am supporting currently are Microsoft Dynamics 365 (ERP) for all Meissner entities (Ireland, US, Switzerland, Germany & Italy). I initially started out in functional areas like Customer Service & Supply Chain as I was lucky to be one of the first crew members on board in this company in 2020. I have moved into the IT Dept since March last year. I have a background in SAP - projects & support, so was drawn back into this area when I saw the opportunity arise within Meissner. I have a keen interest in data as when I was a functional user that was the most frustrating part of my role - trying to get meaningful data from the systems we use. I have used excel to an advanced level and started with Power BI. I see a lot of opportunities within Meissner to develop in the Data area.
 
 <p align="center">
-<img width="500" height="400" src="[iris_line_chart_sepal_width.png](https://www.meissner.com/wp-content/uploads/castlebar-brief-pdf-image.jpg)")
+<img width="1000" height="600" src="(https://www.meissner.com/wp-content/uploads/castlebar-brief-pdf-image.jpg)"
 </p>
 
 
