@@ -589,10 +589,6 @@ The project allowed for the integration of various Python libraries and skills a
 <img width="612" height="792" src="img/Meissner.jpg")
 </p>
 
-<p align="center">
-<img width="569" height="425" src="img/iris_photo_2015.png")
-</p>
-
 - [Git Hub Profile](https://github.com/SBCURLEY "Sharon Curley")
 
 - [Email](mailto:G00438863@atu.ie?subject=Hi "Hi!")
