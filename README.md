@@ -485,6 +485,8 @@ From the above data, I can determine correlations between these main variables: 
 The above results could be displayed on a heatmap using the [Seaborn](https://seaborn.pydata.org/tutorial/introduction) library heatmap function 
 as follows [[30]](https://www.w3schools.com/datascience/ds_stat_correlation_matrix.asp). The above observations are clearer with a heatmap.
 
+#### 6.2.1.1  iris_boxplot.png
+
 <p align="left">
 <img width="500" height="400" src="iris_heatmap.png")
 </p>
@@ -515,7 +517,7 @@ In the scatterplot diagrams below [[32]](https://matplotlib.org/stable/api/_as_g
 
 On the other hand, distinguishing between *I. Virginica* and *I. Versicolor* based on this dataset proves to be more challenging, as indicated by the close proximity and overlapping clusters in the diagrams. However, it's worth noting that *I. Virginica* generally exhibits slightly longer petal lengths compared to *I. Versicolor* and notably longer ones compared to *I. Setosa*.
 
-#### 6.1.2.1  iris_scatterplot.png
+#### 6.2.2.1  iris_scatterplot.png
 
 <p align="left">
 <img width="2000" height="722" src="iris_scatterplot.png")
