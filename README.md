@@ -485,7 +485,7 @@ From the above data, I can determine correlations between these main variables: 
 The above results could be displayed on a heatmap using the [Seaborn](https://seaborn.pydata.org/tutorial/introduction) library heatmap function 
 as follows [[30]](https://www.w3schools.com/datascience/ds_stat_correlation_matrix.asp). The above observations are clearer with a heatmap.
 
-#### 6.2.1.1  iris_boxplot.png
+#### 6.2.1.1  iris_heatmap.png
 
 <p align="left">
 <img width="500" height="400" src="iris_heatmap.png")
